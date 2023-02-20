@@ -19,7 +19,12 @@
     text-decoration: none;
 }
 
-.grid_container{
+.grid_container-index{
+    background-color: rgb(216, 212, 176);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.grid_container-productos{
     background-color: rgb(216, 212, 176);
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -338,7 +343,7 @@ p{
 
 /* GRID AREAS INDEX */
 
-.grid_container{
+.grid_container-index{
     display: grid;
     grid-template-areas: 
     "nav"
@@ -365,15 +370,22 @@ footer{
 
 /* GRID AREAS PRODUCTOS */
 
+.grid_container-productos{
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "main"
+    "footer";
+}
 .container_productos{
     grid-area: productos;
 }
 
 /* MEDIA QUERY MOBILE */
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:767px) {
     /* MEDIA QUERY - INDEX  */
-    .grid_container{
+    .grid_container-index{
         min-height: 100vh;
         grid-template-areas: 
         "nav"
@@ -389,42 +401,53 @@ footer{
     }
 
 /* MEDIA QUERY - PRODUCTOS */
+    .grid_container-productos{
+        min-height: 100vh;
+        grid-template-columns: 2fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "nav"
+        "main"
+        "container_productos"
+        "novedades"
+        "footer";
+    }
+    .container_productos{
+        grid-template-columns: 2fr;
+        grid-template-rows: 1fr;
+    }
+    
+    .img_prenda{
+        height: 11rem;
+        width: 10rem;
+    }
+
+    .box_productos{
+        height: 20rem;
+        width: 14rem;
+        
+    }
+}
+
+/* @media screen and (min-width:768px) and (max-width:1024){
+    .grid_container{
+        min-height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "nav nav"
+        "main main"
+        "productos productos"
+        "novedades novedades"
+        "footer footer"; 
+    } 
 
     .container_productos{
         min-height: 100vh;
         grid-template-columns: 2fr;
         grid-template-rows: 1fr;
-        gap: 1rem;
-        grid-template-areas: 
-        "nav nav"
-        "productos productos"
-        "novedades novedades"
-        "footer footer";
-    }
-    .img_prenda{
-        height: 11rem;
-        width: 10rem;
-    }
-}
-
-@media screen and (min-width:769px) and (max-width:1024px){
-    .grid_container{
-        min-height: 100vw;
-        grid-template-columns: 1fr;
-        grid-template-rows: 2fr;
-        grid-template-areas: 
-        "nav"
-        "main"
-        "prod_destacados"
-        "novedades"
-        "footer";
-    }
-
-    .container_prod_destacados{
-        grid-template-columns: 3fr;
-        grid-template-rows: 1fr;
-        
+        row-gap: 2rem;
     }
     
-}
+} */
 /* 
