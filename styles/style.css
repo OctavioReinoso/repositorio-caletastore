@@ -29,6 +29,17 @@
     text-align: center;
     font-family: 'Roboto', sans-serif;
 }
+.grid_container-contacto{
+    background-color: rgb(216, 212, 176);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.grid-container-carrito{
+    background-color: rgb(216, 212, 176);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
 
 /* HEADER */
 
@@ -215,7 +226,7 @@ footer{
 
 .box_productos{
     text-align: center;
-    background-color: rgb(55, 54, 71);
+    background-color: rgb(47, 46, 59);
     height: 22rem;
     width: 15rem;
     border-radius: 10px;
@@ -251,7 +262,7 @@ p{
 }
 
 .formulario_contacto{
-    background-color: rgb(233, 233, 233);
+    background-color: rgb(137, 140, 150);
     margin: auto;
     margin-top: 20px;
     margin-bottom: 30px;
@@ -383,7 +394,7 @@ footer{
 
 /* MEDIA QUERY MOBILE */
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:768px) {
     /* MEDIA QUERY - INDEX  */
     .grid_container-index{
         min-height: 100vh;
@@ -401,6 +412,7 @@ footer{
     }
 
 /* MEDIA QUERY - PRODUCTOS */
+
     .grid_container-productos{
         min-height: 100vh;
         grid-template-columns: 2fr;
@@ -425,12 +437,11 @@ footer{
     .box_productos{
         height: 20rem;
         width: 14rem;
-        
     }
 }
 
 /* @media screen and (min-width:768px) and (max-width:1024){
-    .grid_container{
+    .grid_container-index, .grid_container-contacto{
         min-height: 100vh;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
