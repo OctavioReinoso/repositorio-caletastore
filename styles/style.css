@@ -49,11 +49,11 @@
 
 .navbar-toggler{
     color: white;
-    background-color: rgb(44, 51, 83);
+    background-color: rgb(179, 146, 103);
 }
 
 .btn:hover{
-    background-color: rgb(192, 146, 86);
+    background-color: #c09256;
     color: white;
     border-color: white;
 }
