@@ -258,42 +258,39 @@ p{
 
 .txt_contacto{
     text-align: center;
-    padding: 40px;
+    padding: 3rem;
+}
+
+.section_contacto{
+    display: grid;
+    justify-items: center;
 }
 
 .formulario_contacto{
     background-color: rgb(137, 140, 150);
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    width: 90%;
-    height: 600px;
-    max-width: 380px;
-    padding: 20px 45px;
-    border-radius: 10px;
+    width: 30rem;
+    height: 35rem;
+    padding: 2rem 3rem;
+    border-radius: 1.5rem;
+    margin-bottom: 5rem;
 }
 
-.container_form{
+.box_form{
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: flex-start;
-    align-items: center;
-    height: 500px;
-    width: 400px;
-    margin: 30px;
+    height: auto;
+    width: auto;
+    flex-direction: column
 }
 
 .form_input{
-    width: 90%;
-    background: none;
-    color: #706c6c;
-    font-size: 15px;
-    padding: 5px 5px;
-    outline: none;
-    border: none;
-    border-bottom: 1px solid rgb(0, 0, 0);
+width: 23rem;
+background: none;
+color: black;
+font-size: 18px;
+outline: none;
+margin-right: -2rem;
+border: none;
+border-bottom: 1px solid rgb(0, 0, 0);
 }
 
 .form_label{
@@ -305,21 +302,23 @@ p{
 
 .form_cont{
     display: flex;
-    flex-direction: row;
-    padding: 30px;
-    
+    justify-content: flex-start;
+    padding: 2rem 1rem;
+    align-items: baseline;
+    color: black;
 }
 
 .btn_contacto{
     justify-content: center;
-    font-size: 14px;
-    padding: 10px;
-    margin: 20px 120px 20px 50px;
+    font-size: 1rem;
+    padding: 0.3rem 1rem;
+    margin: 1.5rem 4rem 5rem 0rem;
+    border-radius: 0.5rem;
 }
 
 .form_line{
-    padding: 20px;
-    margin: 10px;
+    padding: 1.1rem;
+    margin: 1rem;
 }
 
 /* CARRITO CSS */
@@ -354,7 +353,7 @@ p{
 
 /* GRID AREAS INDEX */
 
-.grid_container-index{
+.grid_container-index, .grid_container-productos, .grid_container-contacto{
     display: grid;
     grid-template-areas: 
     "nav"
@@ -381,21 +380,22 @@ footer{
 
 /* GRID AREAS PRODUCTOS */
 
-.grid_container-productos{
-    display: grid;
-    grid-template-areas: 
-    "nav"
-    "main"
-    "footer";
-}
 .container_productos{
     grid-area: productos;
 }
 
+/* GRID AREA CONTACTO */
+
+.section_contacto{
+    grid-area: contacto;
+}
+
+
 /* MEDIA QUERY MOBILE */
 
 @media screen and (max-width:768px) {
-    /* MEDIA QUERY - INDEX  */
+    
+/* MEDIA QUERY - INDEX  */
     .grid_container-index{
         min-height: 100vh;
         grid-template-areas: 
@@ -440,6 +440,22 @@ footer{
     }
 }
 
+/* MEDIA QUERY CONTACTO */
+    .grid_container-contacto{
+        min-height: 100vh;
+        grid-template-areas: 
+        "nav"
+        "main"
+        "contacto"
+        "footer";
+    }
+    .section_contacto{
+        min-height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-areas: 1fr;
+    }
+    
+    
 /* @media screen and (min-width:768px) and (max-width:1024){
     .grid_container-index, .grid_container-contacto{
         min-height: 100vh;

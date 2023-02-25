@@ -11,7 +11,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Contacto-CaletaStore</title>
 </head>
-<body class="grid_container-contacto">
+<body class="grid_container-contacto"> 
     <header>
         <nav class="navbar navbar-expand-lg bg-dark">
             <div class="container-fluid">
@@ -55,20 +55,21 @@
     </header>
 
     <main>
-        <h2 class="txt_contacto">Contacto</h2>
-        <form class="formulario_contacto">
-            <div class="container_form" data-aos="zoom-in">
-                <div class="form_cont">
-                    <input type="text" id="name" placeholder=" " class="form_input">
-                    <label for="name" class="form_label">Nombre y Apellido:</label>
-                    <span class="form_line"></span>
-                </div>
+        <section class="section_contacto">
+            <h2 class="txt_contacto">Contacto</h2>
+            <form class="formulario_contacto" data-aos="zoom-in">
+                <div class="box_form">
+                    <div class="form_cont">
+                        <input type="text" id="name" placeholder=" " class="form_input">
+                        <label for="name" class="form_label">Nombre y Apellido:</label>
+                        <span class="form_line"></span>
+                    </div>
 
-                <div class="form_cont">
-                    <input type="text" id="email" placeholder=" " class="form_input">
+                    <div class="form_cont">
+                        <input type="text" id="email" placeholder=" " class="form_input">
                     <label for="email" class="form_label">Email:</label>
-                    <span class="form_line"></span>
-                </div>
+                        <span class="form_line"></span>
+                    </div>
 
                 <div class="form_cont">
                     <input type="text" id="telefono" placeholder=" " class="form_input">
@@ -76,11 +77,11 @@
                     <span class="form_line"></span>
                 </div>
 
-                <input type="submit" id="enviar" class="btn_contacto" value="Enviar">
+                    <input type="submit" id="enviar" class="btn_contacto" value="Enviar">
 
-            </div>
-        </form>
-
+                </div>
+            </form>
+        </section>
     </main>
 
     <footer>
