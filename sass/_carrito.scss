@@ -1,0 +1,48 @@
+/* CARRITO */
+
+.grid_container-carrito{
+    background-color: $fondoBeige;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+
+    .tit_carrito{
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .container_carrito{
+        display: grid;
+        justify-content: center;
+        padding: 2rem;
+        
+        .box-carrito{
+            background-color: rgb(137, 140, 150);
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            align-items: center;
+            justify-content: center;
+            height: 30rem;
+            width: 42rem;
+            
+            .txt_carrito{
+                color: black;
+                font-size: 20px;
+            }
+            
+            .btn_carrito{
+                justify-content: center;
+                font-size: 1rem;
+                padding: 0.3rem 4rem;
+                margin: 1rem 4rem;
+                border-radius: 0.5rem;
+                
+                &:hover{
+                    color: white;
+                    background-color: $fondoBeige;
+                }
+            }
+        }
+
+    }
+}

@@ -1,0 +1,30 @@
+$fondoBeige: rgb(182, 178, 140);
+// $fondoProductos: ;
+
+@mixin display{
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "main"
+    "footer";
+}
+
+@mixin box{
+    color: $fondoBeige;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* MIXIN box-remera box-jean box-zapas*/
+@mixin box-prod-dest {
+    width: 38vh;
+    height: 40vh;
+}
+
+/* MIXIN prenda_destacada - media */
+@mixin box-prenda-dest{
+    width: 33vh;
+    height: 40vh;
+}
+
+

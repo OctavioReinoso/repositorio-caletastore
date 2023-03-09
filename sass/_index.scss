@@ -1,0 +1,121 @@
+/*INDEX*/
+
+.grid_container-index{
+    background-color: $fondoBeige;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+
+    .tit_bienvenida{
+        padding: 3rem;
+    }
+
+    .h3_prod_destacados{
+        font-size: 1.3rem;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    .container_prod_destacados{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        margin: 2rem 0rem;
+        justify-items: center;
+
+        .box_remera{
+            display: flex;
+            flex-direction: column;
+            // align-items: center;
+            
+            .prenda_destacada{
+                background-color: rgb(150, 150, 119);
+                display: flex;
+                height: 22rem;
+                width: 18rem;
+                justify-content: center;    
+                border-radius: 15px;
+            }
+
+            .tit_remera1{
+                color: black;
+                padding: 1rem;
+            }
+
+        }
+        
+        .box_zapas{
+            display: flex;
+            flex-direction: column;
+            // align-items: center;
+
+            .prenda_destacada{
+                background-color: rgb(150, 150, 119);
+                display: flex;
+                height: 22rem;
+                width: 18rem;
+                justify-content: center;    
+                border-radius: 15px;
+            }
+
+            .tit_zapatillas1{
+                color: black;
+                padding: 1rem;
+            }
+        }
+        
+        .box_jean{
+            display: flex;
+            flex-direction: column;
+            // align-items: center;
+
+            .prenda_destacada{
+                background-color: rgb(150, 150, 119);
+                display: flex;
+                height: 22rem;
+                width: 18rem;
+                justify-content: center;    
+                border-radius: 15px;
+            }
+
+            .tit_jean1{
+                color: black;
+                padding: 1rem;
+            }
+        }
+
+    }
+
+    .container_novedades{
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 80px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .bot_nov{
+            width: 200px;
+            padding: 7px;
+            margin: 10px;
+        }
+
+        .bot_nov_buscar{
+            text-decoration: none;
+            padding: 7px;
+            border: 1px solid rgb(53, 45, 45);
+            cursor: pointer;
+            color: rgb(53, 36, 0);
+            font-size: 14px;
+            background-color: rgb(192, 170, 113);
+        }
+
+        .div_buscar{
+            padding: 10px;
+            border-radius: 8px;
+        }
+    }
+}
+
+
+

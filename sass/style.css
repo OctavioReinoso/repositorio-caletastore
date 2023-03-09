@@ -1,0 +1,601 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+/* MIXIN box-remera box-jean box-zapas*/
+/* MIXIN prenda_destacada - media */
+/*NAV*/
+nav .navbar-brand, nav .nav-link, nav .dropdown-menu {
+  color: white;
+}
+nav .navbar-toggler {
+  color: white;
+  background-color: rgb(179, 146, 103);
+}
+nav .btn {
+  border-color: white;
+  color: white;
+}
+nav .btn:hover {
+  background-color: #c09256;
+  color: white;
+  border-color: white;
+}
+
+/*FOOTER*/
+footer {
+  background-color: black;
+}
+footer .container_medios_pago {
+  display: flex;
+  color: rgb(255, 255, 255);
+  background-color: black;
+  flex-direction: row;
+  text-align: center;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+}
+footer .h3_env {
+  padding: 15px;
+}
+footer .foot_p {
+  padding: 15px 10px;
+}
+footer .h3_mp {
+  padding: 15px;
+}
+footer .foot_mp {
+  padding: 15px 10px;
+}
+footer .container_redes {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+footer .logo_r {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+footer .bx {
+  color: rgb(187, 147, 73);
+  font-size: 50px;
+}
+footer .f_copyright {
+  color: gray;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+/*INDEX*/
+.grid_container-index {
+  background-color: rgb(182, 178, 140);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+.grid_container-index .tit_bienvenida {
+  padding: 3rem;
+}
+.grid_container-index .h3_prod_destacados {
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 2rem;
+}
+.grid_container-index .container_prod_destacados {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  margin: 2rem 0rem;
+  justify-items: center;
+}
+.grid_container-index .container_prod_destacados .box_remera {
+  display: flex;
+  flex-direction: column;
+}
+.grid_container-index .container_prod_destacados .box_remera .prenda_destacada {
+  background-color: rgb(150, 150, 119);
+  display: flex;
+  height: 22rem;
+  width: 18rem;
+  justify-content: center;
+  border-radius: 15px;
+}
+.grid_container-index .container_prod_destacados .box_remera .tit_remera1 {
+  color: black;
+  padding: 1rem;
+}
+.grid_container-index .container_prod_destacados .box_zapas {
+  display: flex;
+  flex-direction: column;
+}
+.grid_container-index .container_prod_destacados .box_zapas .prenda_destacada {
+  background-color: rgb(150, 150, 119);
+  display: flex;
+  height: 22rem;
+  width: 18rem;
+  justify-content: center;
+  border-radius: 15px;
+}
+.grid_container-index .container_prod_destacados .box_zapas .tit_zapatillas1 {
+  color: black;
+  padding: 1rem;
+}
+.grid_container-index .container_prod_destacados .box_jean {
+  display: flex;
+  flex-direction: column;
+}
+.grid_container-index .container_prod_destacados .box_jean .prenda_destacada {
+  background-color: rgb(150, 150, 119);
+  display: flex;
+  height: 22rem;
+  width: 18rem;
+  justify-content: center;
+  border-radius: 15px;
+}
+.grid_container-index .container_prod_destacados .box_jean .tit_jean1 {
+  color: black;
+  padding: 1rem;
+}
+.grid_container-index .container_novedades {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.grid_container-index .container_novedades .bot_nov {
+  width: 200px;
+  padding: 7px;
+  margin: 10px;
+}
+.grid_container-index .container_novedades .bot_nov_buscar {
+  text-decoration: none;
+  padding: 7px;
+  border: 1px solid rgb(53, 45, 45);
+  cursor: pointer;
+  color: rgb(53, 36, 0);
+  font-size: 14px;
+  background-color: rgb(192, 170, 113);
+}
+.grid_container-index .container_novedades .div_buscar {
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* PRODUCTOS */
+.grid_container-productos {
+  background-color: rgb(182, 178, 140);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+.grid_container-productos .txt_productos {
+  padding: 3rem;
+}
+.grid_container-productos .container_productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-radius: 10px;
+  row-gap: 1rem;
+}
+.grid_container-productos .container_productos .box_productos {
+  background-color: rgb(47, 46, 59);
+  border-radius: 10px;
+  margin: 2rem;
+  font-size: 13px;
+  padding: 2rem 0rem;
+}
+.grid_container-productos .container_productos .box_productos .img_prenda {
+  height: 14rem;
+  width: 13rem;
+}
+.grid_container-productos .container_productos .box_productos .tit_img {
+  color: white;
+  font-size: 1.1rem;
+  padding: 0.6rem;
+}
+.grid_container-productos .container_productos .box_productos p {
+  color: white;
+  font-size: 1rem;
+}
+.grid_container-productos .container_productos .box_productos .btn_comprar {
+  background-color: rgb(143, 134, 134);
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem;
+}
+.grid_container-productos .container_novedades {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.grid_container-productos .container_novedades .bot_nov {
+  width: 200px;
+  padding: 7px;
+  margin: 10px;
+}
+.grid_container-productos .container_novedades .bot_nov_buscar {
+  text-decoration: none;
+  padding: 7px;
+  border: 1px solid rgb(53, 45, 45);
+  cursor: pointer;
+  color: rgb(53, 36, 0);
+  font-size: 14px;
+  background-color: rgb(192, 170, 113);
+}
+.grid_container-productos .container_novedades .div_buscar {
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* CONTACTO*/
+.grid_container-contacto {
+  background-color: rgb(182, 178, 140);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+.grid_container-contacto .section_contacto {
+  display: grid;
+  justify-items: center;
+}
+.grid_container-contacto .section_contacto .txt_contacto {
+  text-align: center;
+  padding: 3rem;
+}
+.grid_container-contacto .section_contacto .formulario_contacto {
+  background-color: rgb(137, 140, 150);
+  width: 35rem;
+  height: 37rem;
+  padding: 2rem 3rem;
+  border-radius: 1.5rem;
+  margin-bottom: 5rem;
+}
+.grid_container-contacto .section_contacto .formulario_contacto .box_form {
+  display: flex;
+  height: auto;
+  width: auto;
+  flex-direction: column;
+}
+.grid_container-contacto .section_contacto .formulario_contacto .box_form .form_cont {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 3rem;
+  align-items: baseline;
+  color: black;
+}
+.grid_container-contacto .section_contacto .formulario_contacto .box_form .form_cont .form_input {
+  width: 23rem;
+  background: none;
+  color: black;
+  font-size: 15px;
+  outline: none;
+  margin: 2rem 1rem;
+  padding: 0rem 1rem;
+  border: none;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  text-align: center;
+}
+.grid_container-contacto .section_contacto .formulario_contacto .box_form .form_cont .form_label {
+  cursor: pointer;
+  position: absolute;
+  margin-bottom: 20px;
+}
+.grid_container-contacto .section_contacto .formulario_contacto .box_form .btn_contacto {
+  justify-content: center;
+  font-size: 1rem;
+  padding: 5px;
+  margin: 1rem 10rem;
+  border-radius: 0.5rem;
+}
+.grid_container-contacto .section_contacto .formulario_contacto .box_form .btn_contacto:hover {
+  background-color: rgb(182, 178, 140);
+}
+
+/* CARRITO */
+.grid_container-carrito {
+  background-color: rgb(182, 178, 140);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+.grid_container-carrito .tit_carrito {
+  text-align: center;
+  padding: 2rem;
+}
+.grid_container-carrito .container_carrito {
+  display: grid;
+  justify-content: center;
+  padding: 2rem;
+}
+.grid_container-carrito .container_carrito .box-carrito {
+  background-color: rgb(137, 140, 150);
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  align-items: center;
+  justify-content: center;
+  height: 30rem;
+  width: 42rem;
+}
+.grid_container-carrito .container_carrito .box-carrito .txt_carrito {
+  color: black;
+  font-size: 20px;
+}
+.grid_container-carrito .container_carrito .box-carrito .btn_carrito {
+  justify-content: center;
+  font-size: 1rem;
+  padding: 0.3rem 4rem;
+  margin: 1rem 4rem;
+  border-radius: 0.5rem;
+}
+.grid_container-carrito .container_carrito .box-carrito .btn_carrito:hover {
+  color: white;
+  background-color: rgb(182, 178, 140);
+}
+
+/* GRID AREAS*/
+.grid_container-index {
+  display: grid;
+  grid-template-areas: "nav" "main" "footer";
+}
+
+.grid_container-productos {
+  display: grid;
+  grid-template-areas: "nav" "main" "footer";
+}
+
+.grid_container-contacto {
+  display: grid;
+  grid-template-areas: "nav" "main" "footer";
+}
+
+.grid_container-carrito {
+  display: grid;
+  grid-template-areas: "nav" "main" "footer";
+}
+
+/* GRID AREA INDEX */
+.navbar {
+  grid-area: nav;
+}
+
+.container_prod_destacados {
+  grid-area: prod_destacados;
+}
+
+main {
+  grid-area: main;
+}
+
+.container_novedades {
+  grid-area: novedades;
+}
+
+footer {
+  grid-area: footer;
+}
+
+/* MEDIA QUERYS*/
+/* GRID AREAS PRODUCTOS */
+.container_productos {
+  grid-area: productos;
+}
+
+/* GRID AREA CONTACTO */
+.section_contacto {
+  grid-area: contacto;
+}
+
+/*GRID AREA CARRITO*/
+.container_carrito {
+  grid-area: carrito;
+}
+
+/* MEDIA QUERY MOBILE */
+@media screen and (max-width: 767px) {
+  /* MEDIA QUERY - INDEX  */
+  .grid_container-index {
+    min-height: 100vh;
+    grid-template-areas: "nav" "main" "prod_destacados" "novedades" "footer";
+  }
+  .grid_container-index .container_prod_destacados {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .grid_container-index .container_prod_destacados .box_remera {
+    margin: 5vh;
+  }
+  .grid_container-index .container_prod_destacados .box_remera .prenda_destacada {
+    width: 45vh;
+    height: 55vh;
+  }
+  .grid_container-index .container_prod_destacados .box_zapas {
+    margin: 5vh;
+  }
+  .grid_container-index .container_prod_destacados .box_zapas .prenda_destacada {
+    width: 45vh;
+    height: 55vh;
+  }
+  .grid_container-index .container_prod_destacados .box_jean {
+    margin: 5vh;
+  }
+  .grid_container-index .container_prod_destacados .box_jean .prenda_destacada {
+    width: 45vh;
+    height: 55vh;
+  }
+  /* MEDIA QUERY - PRODUCTOS */
+  .grid_container-productos {
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "nav" "main" "productos" "novedades" "footer";
+  }
+  .grid_container-productos .container_productos {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .grid_container-productos .container_productos .box_productos {
+    margin: 5vh 15vh;
+  }
+  .grid_container-productos .container_productos .box_productos .img_prenda {
+    height: 42vh;
+    width: 38vh;
+  }
+  /* MEDIA QUERY CONTACTO */
+  .grid_container-contacto {
+    min-height: 100vh;
+    grid-template-areas: "nav" "main" "contacto" "footer";
+  }
+  .grid_container-contacto .section_contacto {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .grid_container-contacto .section_contacto .formulario_contacto {
+    width: 60vh;
+    height: 110vh;
+  }
+  .grid_container-contacto .section_contacto .formulario_contacto .box_form .btn_contacto {
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    margin: 1vh 7vh;
+  }
+  .grid_container-contacto .section_contacto .formulario_contacto .box_form .btn_contacto:hover {
+    background-color: rgb(182, 178, 140);
+  }
+  /* MEDIA QUERY CARRITO */
+  .grid_container-carrito {
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "nav" "main" "carrito" "footer";
+  }
+  .grid_container-carrito .container_carrito {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+  }
+  .grid_container-carrito .container_carrito .box-carrito {
+    height: 70vh;
+    width: 54vh;
+  }
+  .grid_container-carrito .container_carrito .box-carrito .txt_carrito {
+    font-size: 15px;
+  }
+  .grid_container-carrito .container_carrito .box-carrito .btn_carrito {
+    padding: 0.4rem 1rem;
+    font-size: 15px;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /*TABLET - INDEX */
+  .grid_container-index {
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "nav" "main" "prod_destacados" "novedades" "footer";
+  }
+  .grid_container-index .container_prod_destacados {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    justify-items: center;
+    margin-bottom: 20vh;
+  }
+  .grid_container-index .container_prod_destacados .box_remera {
+    width: 38vh;
+    height: 40vh;
+  }
+  .grid_container-index .container_prod_destacados .box_remera .prenda_destacada {
+    width: 38vh;
+    height: 40vh;
+  }
+  .grid_container-index .container_prod_destacados .box_zapas {
+    width: 38vh;
+    height: 40vh;
+  }
+  .grid_container-index .container_prod_destacados .box_zapas .prenda_destacada {
+    width: 38vh;
+    height: 40vh;
+  }
+  .grid_container-index .container_prod_destacados .box_jean {
+    width: 38vh;
+    height: 40vh;
+  }
+  .grid_container-index .container_prod_destacados .box_jean .prenda_destacada {
+    width: 38vh;
+    height: 40vh;
+  }
+  /*TABLET - PRODUCTOS*/
+  .grid_container-productos {
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "nav" "main" "productos" "novedades" "footer";
+  }
+  .grid_container-productos .container_productos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid_container-productos .container_productos .box_productos {
+    margin: 5vh 10vh;
+  }
+  .grid_container-productos .container_productos .box_productos .img_prenda {
+    height: 42vh;
+    width: 38vh;
+  }
+  /*TABLET - CONTACTO*/
+  .grid_container-contacto {
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "nav" "main" "contacto" "footer";
+  }
+  .grid_container-contacto .section_contacto {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .grid_container-contacto .section_contacto .formulario_contacto {
+    width: 80vh;
+    height: 100vh;
+  }
+  .grid_container-contacto .section_contacto .formulario_contacto .box_form .btn_contacto {
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    margin: 1vh 18vh;
+  }
+  .grid_container-contacto .section_contacto .formulario_contacto .box_form .btn_contacto:hover {
+    background-color: rgb(182, 178, 140);
+  }
+  /*TABLET - CARRITO*/
+  .grid_container-carrito {
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "nav" "main" "carrito" "footer";
+  }
+  .grid_container-carrito .box-carrito {
+    height: 90vh;
+    width: 90vh;
+  }
+  .grid_container-carrito .box-carrito .txt_carrito {
+    font-size: 16px;
+  }
+  .grid_container-carrito .box-carrito .btn_carrito {
+    padding: 0.4rem 1rem;
+    font-size: 15px;
+    margin: auto;
+  }
+}/*# sourceMappingURL=style.css.map */

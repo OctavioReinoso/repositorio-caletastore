@@ -1,0 +1,333 @@
+/* GRID AREAS*/
+
+.grid_container-index{ 
+    @include display;
+}
+.grid_container-productos{
+    @include display;
+}
+
+.grid_container-contacto{
+    @include display;
+}
+
+.grid_container-carrito{
+    @include display;
+}
+/* GRID AREA INDEX */
+
+.navbar{
+    grid-area: nav;
+}
+.container_prod_destacados{
+    grid-area: prod_destacados;
+}
+
+main{
+    grid-area: main;
+}
+.container_novedades{
+    grid-area: novedades;
+}
+footer{
+    grid-area: footer;
+}
+
+/* MEDIA QUERYS*/ 
+
+/* GRID AREAS PRODUCTOS */
+
+.container_productos{
+    grid-area: productos;
+}
+
+/* GRID AREA CONTACTO */
+
+.section_contacto{
+    grid-area: contacto;
+}
+
+/*GRID AREA CARRITO*/
+
+.container_carrito{
+    grid-area: carrito;
+}
+
+/* MEDIA QUERY MOBILE */
+
+@media screen and (max-width:767px) {
+    
+ /* MEDIA QUERY - INDEX  */
+    .grid_container-index{
+        min-height: 100vh;
+        grid-template-areas: 
+        "nav"
+        "main"
+        "prod_destacados"
+        "novedades"
+        "footer";
+
+            .container_prod_destacados{
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr;
+            
+                .box_remera{
+                    margin: 5vh;
+
+                    .prenda_destacada{
+                        width: 45vh;
+                        height: 55vh;
+                    }
+                }
+
+                .box_zapas{
+                    margin: 5vh;
+                    
+                    .prenda_destacada{
+                        width: 45vh;
+                        height: 55vh;
+                    }
+                }
+
+                .box_jean{
+                    margin: 5vh;
+
+                    .prenda_destacada{
+                        width: 45vh;
+                        height: 55vh;
+                    }
+                }
+            }
+    }
+
+
+ /* MEDIA QUERY - PRODUCTOS */
+
+    .grid_container-productos{
+        min-height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "nav"
+        "main"
+        "productos"
+        "novedades"
+        "footer";
+        
+        .container_productos{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+        
+            .box_productos{
+                margin: 5vh 15vh;
+            
+                .img_prenda{
+                    height: 42vh;
+                    width: 38vh;
+                }
+            }
+        }
+    }
+    
+    /* MEDIA QUERY CONTACTO */
+
+    .grid_container-contacto{
+        min-height: 100vh;
+        grid-template-areas: 
+        "nav"
+        "main"
+        "contacto"
+        "footer"; 
+
+        .section_contacto{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            
+            .formulario_contacto{
+                width: 60vh;
+                height: 110vh;
+            
+                .box_form{
+                    .btn_contacto{
+                        font-size: 1rem;
+                        text-align: center;
+                        border-radius: 0.5rem;
+                        margin: 1vh 7vh;
+                        &:hover{
+                            background-color: $fondoBeige;
+                        }
+                    }
+                }    
+            }
+        }      
+    }
+    /* MEDIA QUERY CARRITO */
+
+    .grid_container-carrito{
+        min-height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "nav"
+        "main"
+        "carrito"
+        "footer";
+        
+        .container_carrito{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            justify-items: center;
+            
+            .box-carrito{
+                height: 70vh;
+                width: 54vh;
+                .txt_carrito{
+                    font-size: 15px;
+                }
+            
+                .btn_carrito{
+                    padding: 0.4rem 1rem;
+                    font-size: 15px;
+                    margin: auto;
+                }
+            }
+        }    
+    }
+}    
+
+@media screen and (min-width: 768px) and (max-width:1024px){
+    /*TABLET - INDEX */
+    .grid_container-index{
+        min-height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "nav"
+        "main"
+        "prod_destacados"
+        "novedades"
+        "footer"; 
+    
+        .container_prod_destacados{
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            justify-items: center;
+            margin-bottom: 20vh;
+        
+            .box_remera{
+                @include box-prod-dest;
+                
+                .prenda_destacada{
+                    @include box-prod-dest;
+                }
+            }
+            
+            .box_zapas{
+                @include box-prod-dest;
+
+                .prenda_destacada{
+                    @include box-prod-dest;
+                }
+            }
+            
+            .box_jean{
+                @include box-prod-dest;
+
+                .prenda_destacada{
+                    @include box-prod-dest;
+                }
+            }        
+        }    
+    } 
+
+    
+
+    /*TABLET - PRODUCTOS*/
+    .grid_container-productos{
+        min-height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "nav"
+        "main"
+        "productos"
+        "novedades"
+        "footer";
+        
+        .container_productos{
+            grid-template-columns: repeat(2, 1fr);
+    
+            .box_productos{
+                margin: 5vh 10vh;
+            
+                .img_prenda{
+                    height: 42vh;
+                    width: 38vh;
+                }
+            }
+        }
+    }
+
+    /*TABLET - CONTACTO*/
+    
+    .grid_container-contacto{
+        min-height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "nav"
+        "main"
+        "contacto"
+        "footer";
+    
+
+        .section_contacto{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+        
+
+            .formulario_contacto{
+                width: 80vh;
+                height: 100vh;
+                .box_form{
+                    .btn_contacto{
+                        font-size: 1rem;
+                        text-align: center;
+                        border-radius: 0.5rem;
+                        margin: 1vh 18vh;
+                        &:hover{
+                            background-color: $fondoBeige;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /*TABLET - CARRITO*/
+    .grid_container-carrito{
+        min-height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "nav"
+        "main"
+        "carrito"
+        "footer";
+    
+        .box-carrito{
+            height: 90vh;
+            width: 90vh;
+            
+            .txt_carrito{
+                font-size: 16px;
+            }
+
+            .btn_carrito{
+                padding: 0.4rem 1rem;
+                font-size: 15px;
+                margin: auto;
+            }
+        }
+    }
+
+}

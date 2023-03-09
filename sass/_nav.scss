@@ -1,0 +1,24 @@
+/*NAV*/
+
+nav{
+    .navbar-brand, .nav-link, .dropdown-menu{
+        color: white;
+    }
+    
+    .navbar-toggler{
+        color: white;
+        background-color: rgb(179, 146, 103);
+    }
+    
+    .btn{
+        border-color: white;
+        color: white;
+        &:hover{
+            background-color: #c09256;
+            color: white;
+            border-color: white;
+        }
+    }
+    
+    
+}

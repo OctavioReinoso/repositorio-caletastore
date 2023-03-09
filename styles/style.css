@@ -10,15 +10,6 @@
 
 /* INDEX CSS */
 
-.logo_name{
-    margin-left: 100px;
-    color: white;
-}
-
-.logo_link{
-    text-decoration: none;
-}
-
 .grid_container-index{
     background-color: rgb(182, 178, 140);
     text-align: center;
@@ -86,7 +77,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    align-items: center;
 }
 
 .prenda_destacada{
@@ -95,13 +85,8 @@
     height: 22rem;
     width: 18rem;
     justify-content: center;
-    margin: 10px 30px 5px 30px;    
+    margin: 1.2rem;    
     border-radius: 15px;
-}
-
-.box_remera{
-    transition: height 2s, width 1s;
-    
 }
 
 .tit_remera1, .tit_jean1, .tit_zapatillas1{
@@ -321,7 +306,7 @@ p{
 
 .tit_carrito{
     text-align: center;
-    padding-top: 40px;
+    padding: 2rem;
 }
 
 .container_carrito{
@@ -506,7 +491,7 @@ footer{
 
     .box-carrito{
         height: 70vh;
-        width: 60vh;
+        width: 54vh;
     }
 
     .btn_carrito{
@@ -542,13 +527,13 @@ footer{
     }
 
     .box_remera, .box_zapas, .box_jean{
-        width: 50vh;
+        width: 38vh;
         height: 40vh;
     }
 
     .prenda_destacada{
-        width: 42vh;
-        height: 48vh;
+        width: 33vh;
+        height: 40vh;
     }
 
     /*TABLET - PRODUCTOS*/
