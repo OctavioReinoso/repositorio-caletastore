@@ -1,0 +1,19 @@
+.botones{
+    background-color: $btnColor;
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    padding: 2% 4%; 
+    
+    &:hover{
+        background-color: $btnHover;
+    }
+}
+
+.h1s{
+    color: $titColor;
+    text-shadow: 1px 2px 8px black;
+    font-family: 'Patua One', cursive;
+    margin: 2rem;
+}

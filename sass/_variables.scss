@@ -1,30 +1,7 @@
-$fondoBeige: rgb(182, 178, 140);
-// $fondoProductos: ;
-
-@mixin display{
-    display: grid;
-    grid-template-areas: 
-    "nav"
-    "main"
-    "footer";
-}
-
-@mixin box{
-    color: $fondoBeige;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-}
-
-/* MIXIN box-remera box-jean box-zapas*/
-@mixin box-prod-dest {
-    width: 38vh;
-    height: 40vh;
-}
-
-/* MIXIN prenda_destacada - media */
-@mixin box-prenda-dest{
-    width: 33vh;
-    height: 40vh;
-}
+$fondoBeige: rgb(157, 149, 112);
+$boxProd: #212529;
+$btnHover: #c09256;
+$btnColor: rgb(143, 134, 134);
+$titColor: rgb(186, 190, 209);
 
 

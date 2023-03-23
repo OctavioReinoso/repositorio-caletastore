@@ -1,121 +1,88 @@
 /*INDEX*/
 
 .grid_container-index{
-    background-color: $fondoBeige;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
+    @include containers(center);
 
-    .tit_bienvenida{
-        padding: 3rem;
-    }
+    .banner{
+        position: relative;
 
-    .h3_prod_destacados{
-        font-size: 1.3rem;
-        text-align: center;
-        padding: 2rem;
+        .tit_bienvenida{
+            font-family: 'Teko', sans-serif;;
+            font-size: 4rem;
+            color: $titColor;
+            position: absolute;
+            top: 10%;
+            left: 40%;
+            text-shadow: 0px 6px 1px rgba(0, 0, 0, 0.8);
+        }
+
+        .img-banner{
+            height: 85%;
+            width: 100%;
+        }
+    
+        .h3_prod_destacados{
+            @extend .h1s;
+        }
     }
+    
 
     .container_prod_destacados{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
-        margin: 2rem 0rem;
+        margin: 4rem 0rem;
         justify-items: center;
 
-        .box_remera{
+        .box_prenda-dest{
             display: flex;
             flex-direction: column;
-            // align-items: center;
+            background-color: $boxProd;
+            height: 90%;
+            width: 70%;
+            padding: 2% 2%;
+            box-shadow: 5px 9px 10px;
+            border-radius: 5px;
+            &:hover{
+                transform: scale(1.1);
+                transition-duration: 2s;
+            }
             
-            .prenda_destacada{
-                background-color: rgb(150, 150, 119);
-                display: flex;
-                height: 22rem;
-                width: 18rem;
-                justify-content: center;    
-                border-radius: 15px;
-            }
-
-            .tit_remera1{
+            .prenda_destacada1{
+                height: 80%;
+                width: 100%;
+                padding: 10%;
                 color: black;
-                padding: 1rem;
+                text-decoration: none;
             }
 
-        }
-        
-        .box_zapas{
-            display: flex;
-            flex-direction: column;
-            // align-items: center;
-
-            .prenda_destacada{
-                background-color: rgb(150, 150, 119);
-                display: flex;
-                height: 22rem;
-                width: 18rem;
-                justify-content: center;    
-                border-radius: 15px;
-            }
-
-            .tit_zapatillas1{
+            .prenda_destacada2{
+                height: 87%;
+                width: 100%;
+                padding: 10%;
                 color: black;
-                padding: 1rem;
-            }
-        }
-        
-        .box_jean{
-            display: flex;
-            flex-direction: column;
-            // align-items: center;
-
-            .prenda_destacada{
-                background-color: rgb(150, 150, 119);
-                display: flex;
-                height: 22rem;
-                width: 18rem;
-                justify-content: center;    
-                border-radius: 15px;
+                text-decoration: none;
             }
 
-            .tit_jean1{
+            .prenda_destacada3{
+                height: 78%;
+                width: 100%;
+                padding: 10%;
                 color: black;
-                padding: 1rem;
+                text-decoration: none;
             }
-        }
 
-    }
+            a{
+                text-decoration: none;
+            }
 
-    .container_novedades{
-        text-align: center;
-        padding-top: 40px;
-        padding-bottom: 80px;
-        font-size: 20px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-
-        .bot_nov{
-            width: 200px;
-            padding: 7px;
-            margin: 10px;
-        }
-
-        .bot_nov_buscar{
-            text-decoration: none;
-            padding: 7px;
-            border: 1px solid rgb(53, 45, 45);
-            cursor: pointer;
-            color: rgb(53, 36, 0);
-            font-size: 14px;
-            background-color: rgb(192, 170, 113);
-        }
-
-        .div_buscar{
-            padding: 10px;
-            border-radius: 8px;
+            .tit-prenda-dest{
+                color: white;
+                font-family: 'Oswald', sans-serif;;
+                font-size: 25px;
+                text-decoration: none;
+                text-shadow: 3px 4px 4px black;
+            }
         }
     }
 }
-
-
-

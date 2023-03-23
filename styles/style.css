@@ -30,7 +30,11 @@
     text-align: center;
     font-family: 'Roboto', sans-serif;
 }
-
+.grid_container-accesorios{
+    background-color: rgb(182, 178, 140);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
 /* HEADER */
 
 .navbar-brand, .nav-link, .dropdown-menu{
@@ -344,9 +348,61 @@ p{
     background-color: #c09256;
 }
 
+/* ACCESORIOS CSS */
+
+.tit-acc{
+    margin: 2rem;
+}
+
+.section-accs{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 2rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.box-acc{
+    background-color: #09091a;
+    width: 85%;
+    height: 92%;
+    padding: 7% 1%;
+}
+
+.prenda-acc{
+    width: 80%;
+    height: 77%;
+}
+
+.tit_img-acc{
+    font-size: 16px;
+    color: white;
+    margin: 2%;
+}
+
+.box-acc p{
+    font-size: 14px;
+    margin: 1%;
+}
+
+.btn_acc{
+    color: white;
+    margin: 1%;
+    padding: 2%;
+    background-color: gray;
+    border: #09091a;
+    border-radius: 5%;
+    font-size: 14px;
+}
+
+.btn_acc:hover{
+    background-color:#c09256;
+}
+
+
 /* GRID AREAS INDEX */
 
-.grid_container-index, .grid_container-productos, .grid_container-contacto, .grid_container-carrito{
+.grid_container-index, .grid_container-productos, .grid_container-contacto, .grid_container-carrito, .grid_container-accesorios{
     display: grid;
     grid-template-areas: 
     "nav"
@@ -388,6 +444,12 @@ footer{
 
 .container_carrito{
     grid-area: carrito;
+}
+
+/* GRID AREA ACCESORIOS */
+
+.section-accs{
+    grid-area: accesorios;
 }
 
 /* MEDIA QUERY MOBILE */
@@ -500,6 +562,50 @@ footer{
         margin: auto;
     }
 
+    /* MEDIA QUERY ACCESORIOS */
+
+    .grid_container-accesorios{
+        min-height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "nav"
+        "main"
+        "accesorios"
+        "novedades"
+        "footer";
+    }
+
+    .section-accs{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 2% 0%;
+    }
+
+    .box-acc{
+        margin: 10%;
+        padding: 5% 1%;
+    }
+
+    .prenda-acc{
+        width: 95%;
+        height: 70%;
+    }
+
+    .box-acc p, .tit_img-acc{
+        margin: 4%;
+        font-size: 14px;
+    }
+
+    .btn_acc{
+        padding: 5%;
+        font-size: 12px;
+    }
+
+    .btn_acc:hover{
+        background-color: #c09256;
+    }
+
+
 }    
 
 
@@ -606,6 +712,49 @@ footer{
         padding: 0.4rem 1rem;
         font-size: 15px;
         margin: auto;
+    }
+
+    /* TABLET - ACCESORIOS */
+
+    .grid_container-accesorios{
+        min-height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-rows: 
+        "nav"
+        "main"
+        "accesorios"
+        "novedades"
+        "footer";
+    }
+
+    .section-accs{
+        grid-template-columns: repeat(4, 1fr);
+        margin: 1%;
+    }
+
+    .box-acc{
+        margin: 10%;
+        padding: 10% 1%;
+    }
+
+    .prenda-acc{
+        width: 95%;
+        height: 74%;
+    }
+
+    .box-acc p, .tit_img-acc{
+        margin: 4%;
+        font-size: 14px;
+    }
+
+    .btn_acc{
+        padding: 3%;
+        font-size: 12px;
+    }
+
+    .btn_acc:hover{
+        background-color: #c09256;
     }
 
 }

@@ -1,0 +1,13 @@
+@mixin display{
+    display: grid;
+    grid-template-areas: 
+    "nav"
+    "main"
+    "footer";
+}
+
+@mixin containers($txtAlg){
+    background-color: $fondoBeige;
+    text-align: $txtAlg;
+    font-family: 'Roboto', sans-serif;
+}

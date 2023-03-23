@@ -1,0 +1,32 @@
+/* CONTAINER NOVEDADES CSS */
+
+.container_novedades{
+    display: flex;
+    text-align: center;
+    font-size: 18px;
+    flex-direction: column;
+    margin: 4rem 1rem;
+
+    .bot_nov{
+        width: 15rem;
+        padding: 7px 6px;
+        margin: 1rem;
+        font-size: 14px;
+    }
+
+    .div_buscar{
+        margin: 1.3rem 0rem;
+        .bot_nov_buscar{
+            background-color: $btnColor;
+            font-family: 'Oswald', sans-serif;
+            font-size: 15px;
+            text-decoration: none;
+            color: white;
+            padding: 0.7rem 1.4rem; 
+
+            &:hover{
+                background-color: $btnHover;
+            }
+        }
+    }    
+}

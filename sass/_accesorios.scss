@@ -1,0 +1,61 @@
+/* ACCESORIOS CSS*/
+
+.grid_container-accesorios{
+    @include containers(center);
+
+    .tit-acc{
+        @extend .h1s;
+    }
+
+    .section-accs{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        margin: 2rem;
+        justify-items: center;
+        align-items: center;
+    
+        .box-acc{
+            background-color: $boxProd;
+            width: 85%;
+            height: 92%;
+            padding: 7% 0%;
+        
+            .prenda-acc{
+                width: 80%;
+                height: 77%;
+                padding: 1% 1%;
+            }
+            
+            .tit_img-acc{
+                color: white;
+                font-family: 'Oswald', sans-serif;
+                font-size: 1.1rem;
+                text-decoration: none;
+                margin: 2%;
+                text-shadow: 2px 3px 3px black;
+            }
+
+            p{
+                color: white;
+                font-family: 'Oswald', sans-serif;
+                font-size: 1rem;
+                text-shadow: 2px 2px 3px black;
+                margin: 3%;
+            }
+
+            .btn_comprar{
+                background-color: rgb(143, 134, 134);
+                font-family: 'Oswald', sans-serif;
+                font-size: 15px;
+                text-decoration: none;
+                color: white;
+                padding: 2% 4%; 
+
+                &:hover{
+                    background-color: $btnHover;
+                }
+            }
+        }
+    }
+}
+

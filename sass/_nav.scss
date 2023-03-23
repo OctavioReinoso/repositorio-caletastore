@@ -1,13 +1,31 @@
 /*NAV*/
 
 nav{
-    .navbar-brand, .nav-link, .dropdown-menu{
+    .navbar-brand{
         color: white;
+        font-size: 18px;
+        font-family: 'Oswald', sans-serif;
     }
     
+    .nav-link{
+        color: white;
+        font-family: 'Oswald', sans-serif;
+    }
+
+    .dropdown-menu{
+        color: white;
+    }
+
     .navbar-toggler{
         color: white;
         background-color: rgb(179, 146, 103);
+    }
+
+    .dropdown-item{
+        font-family: 'Oswald', sans-serif;
+        &:hover{
+            background-color: $btnHover;
+        }
     }
     
     .btn{

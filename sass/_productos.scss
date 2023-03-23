@@ -1,82 +1,54 @@
 /* PRODUCTOS */
 
 .grid_container-productos{
-    background-color: $fondoBeige;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
+    @include containers(center);
 
-    .txt_productos{
-        padding: 3rem;
-    }
+    .tit_prod{
+        @extend .h1s;
+    } 
 
     .container_productos{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         border-radius: 10px;
-        row-gap: 1rem;
+        row-gap: 3rem;  
 
         .box_productos{
-            background-color: rgb(47, 46, 59);
+            background-color: $boxProd;
             border-radius: 10px;
-            margin: 2rem;
+            margin: 1rem 2rem;
+            padding: 2% 1%;
             font-size: 13px;
-            padding: 2rem 0rem;
+            &:hover{
+                transform:scale(1.1);
+                transition-duration: 2s;
+            }
 
             .img_prenda{
-                height: 14rem;
-                width: 13rem;
+                height: 68%;
+                width: 73%;
+                padding: 5% 1%;
             }
 
             .tit_img{
                 color: white;
+                font-family: 'Oswald', sans-serif;
                 font-size: 1.1rem;
-                padding: 0.6rem;
+                text-decoration: none;
+                margin: 3%;
+                text-shadow: 2px 3px 3px black;
             }
 
             p{
                 color: white;
+                font-family: 'Oswald', sans-serif;
                 font-size: 1rem;
+                text-shadow: 2px 2px 3px black;
             }
-
+            
             .btn_comprar{
-                background-color: rgb(143, 134, 134);
-                font-size: 14px;
-                text-decoration: none;
-                color: white;
-                padding: 0.5rem;
+                @extend .botones;
             }
         }    
     }
-
-    .container_novedades{
-        text-align: center;
-        padding-top: 40px;
-        padding-bottom: 80px;
-        font-size: 20px;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-
-        .bot_nov{
-            width: 200px;
-            padding: 7px;
-            margin: 10px;
-        }
-
-        .bot_nov_buscar{
-            text-decoration: none;
-            padding: 7px;
-            border: 1px solid rgb(53, 45, 45);
-            cursor: pointer;
-            color: rgb(53, 36, 0);
-            font-size: 14px;
-            background-color: rgb(192, 170, 113);
-        }
-
-        .div_buscar{
-            padding: 10px;
-            border-radius: 8px;
-        }
-    }
-
 }

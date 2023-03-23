@@ -14,6 +14,11 @@
 .grid_container-carrito{
     @include display;
 }
+
+.grid_container-accesorios{
+    @include display;
+}
+
 /* GRID AREA INDEX */
 
 .navbar{
@@ -22,7 +27,6 @@
 .container_prod_destacados{
     grid-area: prod_destacados;
 }
-
 main{
     grid-area: main;
 }
@@ -53,6 +57,12 @@ footer{
     grid-area: carrito;
 }
 
+/* GRID AREA ACCESORIOS */
+
+.section-accs{
+    grid-area: accesorios;
+}
+
 /* MEDIA QUERY MOBILE */
 
 @media screen and (max-width:767px) {
@@ -67,38 +77,62 @@ footer{
         "novedades"
         "footer";
 
-            .container_prod_destacados{
-                grid-template-columns: 1fr;
-                grid-template-rows: 1fr;
-            
-                .box_remera{
-                    margin: 5vh;
-
-                    .prenda_destacada{
-                        width: 45vh;
-                        height: 55vh;
-                    }
-                }
-
-                .box_zapas{
-                    margin: 5vh;
-                    
-                    .prenda_destacada{
-                        width: 45vh;
-                        height: 55vh;
-                    }
-                }
-
-                .box_jean{
-                    margin: 5vh;
-
-                    .prenda_destacada{
-                        width: 45vh;
-                        height: 55vh;
-                    }
-                }
+        .banner{
+            .img-banner{
+                height: 50vh;
+                width: 100%;
             }
+            .tit_bienvenida{
+                font-size: 6vh;
+                left: 28%;
+            }
+        }
+
+        .container_prod_destacados{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+                
+            .box_prenda-dest{
+                padding: 2% 3%;
+                margin: 3%;
+                width: 62%;
+                height: 87%;
+
+                .prenda_destacada1{
+                    width: 98%;
+                    height: 75%;
+                    padding: 10% 12%;
+                    
+                }
+                
+                .prenda_destacada2{
+                    width: 100%;
+                    height: 77%;
+                    padding: 10% 12%
+                }
+
+                .prenda_destacada3{
+                    width: 100%;
+                    height: 75%;
+                    padding: 10% 12%
+                }
+                
+            }
+        }
+
+        .container_novedades{
+            .p_novedades{
+                font-size: 15px;
+                color: black;
+            }
+
+            .bot_nov{
+                width: 55%;
+                margin: 1vh;
+            }
+        }
     }
+
 
 
  /* MEDIA QUERY - PRODUCTOS */
@@ -117,13 +151,15 @@ footer{
         .container_productos{
             grid-template-columns: 1fr;
             grid-template-rows: 1fr;
-        
+
             .box_productos{
-                margin: 5vh 15vh;
-            
+                margin: 2% 25%;
+                padding: 8% 1%; 
+
                 .img_prenda{
-                    height: 42vh;
-                    width: 38vh;
+                    height: 70%;
+                    width: 90%;
+                    padding: 1% 3%;
                 }
             }
         }
@@ -142,17 +178,31 @@ footer{
         .section_contacto{
             grid-template-columns: 1fr;
             grid-template-rows: 1fr;
-            
+            margin: 5%;
+
             .formulario_contacto{
-                width: 60vh;
-                height: 110vh;
-            
+                width: 86%;
+                height: 90%;
+                margin: 6% 6%;
+                padding: 7% 3%;
+
                 .box_form{
+                    padding: 0vh;
+                    
+                    .form_cont{
+                        margin: 1vh;
+                        .form_input{
+                            margin: 6vh 0vh;
+                        }
+                        .form_label{
+                            margin-bottom: 1vh;
+                        }
+                    }
+
                     .btn_contacto{
                         font-size: 1rem;
-                        text-align: center;
-                        border-radius: 0.5rem;
-                        margin: 1vh 7vh;
+                        border-radius: 2vh;
+                        margin: 0vh 8vh;
                         &:hover{
                             background-color: $fondoBeige;
                         }
@@ -177,10 +227,14 @@ footer{
             grid-template-columns: 1fr;
             grid-template-rows: 1fr;
             justify-items: center;
-            
+            margin: 5% 5% 25% 5%;
+
             .box-carrito{
-                height: 70vh;
-                width: 54vh;
+                height: 100%;
+                width: 85%;
+                padding: 30% 10%;
+                margin: 6% 8%;
+
                 .txt_carrito{
                     font-size: 15px;
                 }
@@ -192,6 +246,51 @@ footer{
                 }
             }
         }    
+    }
+
+    .grid_container-accesorios{
+        min-height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "nav"
+        "main"
+        "accesorios"
+        "novedades"
+        "footer";
+
+        .section-accs{
+            grid-template-columns: repeat(2, 1fr);
+            margin: 2% 0%;
+        
+            .box-acc{
+                margin: 2% 5%;
+                padding: 4% 2%;
+            
+                .prenda-acc{
+                    width: 95%;
+                    height: 70%;
+                }
+
+                p{
+                    margin: 4%;
+                    font-size: 14px;
+                }
+
+                .tit_img-acc{
+                    margin: 4%;
+                    font-size: 14px;
+                }
+
+                .btn_acc{
+                    padding: 5%;
+                    font-size: 12px;
+                    &:hover{
+                        background-color: $fondoBeige;
+                    }
+                }
+            }
+        }
     }
 }    
 
@@ -212,31 +311,30 @@ footer{
             grid-template-columns: repeat(3, 1fr);
             grid-template-rows: 1fr;
             justify-items: center;
-            margin-bottom: 20vh;
         
-            .box_remera{
-                @include box-prod-dest;
-                
-                .prenda_destacada{
-                    @include box-prod-dest;
+            .box_prenda-dest{
+                height: 90%;
+                width: 80%;
+                padding: 4% 1%;
+
+                .prenda_destacada1{
+                    width: 100%;
+                    height: 75%;
+                    padding: 8% 6%;
+                }
+
+                .prenda_destacada2{
+                    width: 100%;
+                    height: 82%;
+                    padding: 8% 5%;
+                }
+
+                .prenda_destacada3{
+                    width: 100%;
+                    height: 75%;
+                    padding: 8% 6%;
                 }
             }
-            
-            .box_zapas{
-                @include box-prod-dest;
-
-                .prenda_destacada{
-                    @include box-prod-dest;
-                }
-            }
-            
-            .box_jean{
-                @include box-prod-dest;
-
-                .prenda_destacada{
-                    @include box-prod-dest;
-                }
-            }        
         }    
     } 
 
@@ -258,11 +356,12 @@ footer{
             grid-template-columns: repeat(2, 1fr);
     
             .box_productos{
-                margin: 5vh 10vh;
-            
+                margin: 5vh 8vh;
+                padding: 5% 2%;
                 .img_prenda{
-                    height: 42vh;
-                    width: 38vh;
+                    height: 46vh;
+                    width: 35vh;
+                    padding: 1% 1%;
                 }
             }
         }
@@ -279,22 +378,36 @@ footer{
         "main"
         "contacto"
         "footer";
-    
 
         .section_contacto{
             grid-template-columns: 1fr;
             grid-template-rows: 1fr;
-        
+            margin: 5%;
 
             .formulario_contacto{
-                width: 80vh;
-                height: 100vh;
+                width: 66%;
+                height: 90%;
+                margin: 4% 18%;
+                padding: 2%;
+
                 .box_form{
+                    padding: 1%;
+
+                    .form_cont{
+                        margin: 4% 10%;
+
+                        .form_input{
+                            margin: 10% 0%;
+                        }
+                        .form_label{
+                            margin-bottom: 1vh;
+                        }
+                    }
+
                     .btn_contacto{
                         font-size: 1rem;
-                        text-align: center;
-                        border-radius: 0.5rem;
-                        margin: 1vh 18vh;
+                        border-radius: 2vh;
+                        margin: 0% 35%;
                         &:hover{
                             background-color: $fondoBeige;
                         }
@@ -313,21 +426,74 @@ footer{
         "main"
         "carrito"
         "footer";
-    
-        .box-carrito{
-            height: 90vh;
-            width: 90vh;
-            
-            .txt_carrito{
-                font-size: 16px;
-            }
+        .container_carrito{
+            grid-template-columns: repeat(1, 1fr);
+            justify-items: center;
+            margin: 6% 10%;
 
-            .btn_carrito{
-                padding: 0.4rem 1rem;
-                font-size: 15px;
-                margin: auto;
+            .box-carrito{
+                height: 85%;
+                width: 60%;
+                padding: 30% 10%;
+
+                .txt_carrito{
+                    font-size: 16px;
+                }
+
+                .btn_carrito{
+                    padding: 0.4rem 1rem;
+                    font-size: 15px;
+                    margin: auto;
+                }
             }
         }
     }
 
+    /* TABLET - ACCESORIOS */
+
+    .grid_container-accesorios{
+        min-height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-rows: 
+        "nav"
+        "main"
+        "accesorios"
+        "novedades"
+        "footer";
+        
+        .section-accs{
+            grid-template-columns: repeat(4, 1fr);
+            margin: 1%;
+            
+            .box-acc{
+                margin: 10%;
+                padding: 10% 1%;
+            
+                .prenda-acc{
+                    width: 95%;
+                    height: 74%;
+                    padding: 1% 1%;
+                }
+
+                p{
+                    margin: 4%;
+                    font-size: 14px;
+                }
+
+                .tit_img-acc{
+                    margin: 4%;
+                    font-size: 14px;
+                }
+
+                .btn_acc{
+                    padding: 3%;
+                    font-size: 12px;
+                    &:hover{
+                        background-color: $fondoBeige;
+                    }
+                }
+            }
+        }
+    }
 }

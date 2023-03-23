@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Teko:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
 * {
   padding: 0%;
   margin: 0%;
@@ -10,7 +13,16 @@
 /* MIXIN box-remera box-jean box-zapas*/
 /* MIXIN prenda_destacada - media */
 /*NAV*/
-nav .navbar-brand, nav .nav-link, nav .dropdown-menu {
+nav .navbar-brand {
+  color: white;
+}
+nav .nav-link {
+  color: white;
+}
+nav .navbar-nav {
+  margin: 0rem 19rem;
+}
+nav .dropdown-menu {
   color: white;
 }
 nav .navbar-toggler {
@@ -76,17 +88,32 @@ footer .f_copyright {
 
 /*INDEX*/
 .grid_container-index {
-  background-color: rgb(182, 178, 140);
+  background-color: rgb(157, 149, 112);
   text-align: center;
   font-family: "Roboto", sans-serif;
 }
-.grid_container-index .tit_bienvenida {
-  padding: 3rem;
+.grid_container-index .banner {
+  position: relative;
 }
-.grid_container-index .h3_prod_destacados {
-  font-size: 1.3rem;
-  text-align: center;
-  padding: 2rem;
+.grid_container-index .banner .tit_bienvenida {
+  font-family: "Teko", sans-serif;
+  font-size: 4rem;
+  color: rgb(186, 190, 209);
+  position: absolute;
+  top: 13%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0px 6px 1px rgba(0, 0, 0, 0.8);
+}
+.grid_container-index .banner .img-banner {
+  height: 85%;
+  width: 100%;
+}
+.grid_container-index .banner .h3_prod_destacados {
+  color: rgb(186, 190, 209);
+  text-shadow: 1px 2px 8px black;
+  font-family: "Patua One", cursive;
+  margin: 3rem;
 }
 .grid_container-index .container_prod_destacados {
   display: grid;
@@ -173,12 +200,15 @@ footer .f_copyright {
 
 /* PRODUCTOS */
 .grid_container-productos {
-  background-color: rgb(182, 178, 140);
+  background-color: rgb(157, 149, 112);
   text-align: center;
   font-family: "Roboto", sans-serif;
 }
-.grid_container-productos .txt_productos {
-  padding: 3rem;
+.grid_container-productos .tit_prod {
+  color: rgb(186, 190, 209);
+  text-shadow: 1px 2px 8px black;
+  font-family: "Patua One", cursive;
+  margin: 2rem;
 }
 .grid_container-productos .container_productos {
   display: grid;
@@ -187,7 +217,7 @@ footer .f_copyright {
   row-gap: 1rem;
 }
 .grid_container-productos .container_productos .box_productos {
-  background-color: rgb(47, 46, 59);
+  background-color: #212529;
   border-radius: 10px;
   margin: 2rem;
   font-size: 13px;
@@ -241,9 +271,88 @@ footer .f_copyright {
   border-radius: 8px;
 }
 
+/* ACCESORIOS CSS*/
+.grid_container-accesorios {
+  background-color: rgb(157, 149, 112);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+.grid_container-accesorios .tit-acc {
+  color: rgb(186, 190, 209);
+  text-shadow: 1px 2px 8px black;
+  font-family: "Patua One", cursive;
+  margin: 2rem;
+}
+.grid_container-accesorios .section-accs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 2rem;
+  justify-items: center;
+  align-items: center;
+}
+.grid_container-accesorios .section-accs .box-acc {
+  background-color: #212529;
+  width: 85%;
+  height: 92%;
+  padding: 7% 1%;
+}
+.grid_container-accesorios .section-accs .box-acc .prenda-acc {
+  width: 80%;
+  height: 77%;
+}
+.grid_container-accesorios .section-accs .box-acc .tit_img-acc {
+  font-size: 16px;
+  color: white;
+  margin: 2%;
+}
+.grid_container-accesorios .section-accs .box-acc p {
+  color: white;
+  font-size: 14px;
+  margin: 1%;
+}
+.grid_container-accesorios .section-accs .box-acc .btn_acc {
+  color: white;
+  margin: 1%;
+  padding: 2%;
+  background-color: gray;
+  border: #09091a;
+  border-radius: 5%;
+  font-size: 14px;
+}
+.grid_container-accesorios .section-accs .box-acc .btn_acc:hover {
+  background-color: rgb(157, 149, 112);
+}
+.grid_container-accesorios .container_novedades {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.grid_container-accesorios .container_novedades .bot_nov {
+  width: 200px;
+  padding: 7px;
+  margin: 10px;
+}
+.grid_container-accesorios .container_novedades .bot_nov_buscar {
+  text-decoration: none;
+  padding: 7px;
+  border: 1px solid rgb(53, 45, 45);
+  cursor: pointer;
+  color: rgb(53, 36, 0);
+  font-size: 14px;
+  background-color: rgb(192, 170, 113);
+}
+.grid_container-accesorios .container_novedades .div_buscar {
+  padding: 10px;
+  border-radius: 8px;
+}
+
 /* CONTACTO*/
 .grid_container-contacto {
-  background-color: rgb(182, 178, 140);
+  background-color: rgb(157, 149, 112);
   text-align: center;
   font-family: "Roboto", sans-serif;
 }
@@ -252,8 +361,10 @@ footer .f_copyright {
   justify-items: center;
 }
 .grid_container-contacto .section_contacto .txt_contacto {
-  text-align: center;
-  padding: 3rem;
+  color: rgb(186, 190, 209);
+  text-shadow: 1px 2px 8px black;
+  font-family: "Patua One", cursive;
+  margin: 2rem;
 }
 .grid_container-contacto .section_contacto .formulario_contacto {
   background-color: rgb(137, 140, 150);
@@ -301,18 +412,20 @@ footer .f_copyright {
   border-radius: 0.5rem;
 }
 .grid_container-contacto .section_contacto .formulario_contacto .box_form .btn_contacto:hover {
-  background-color: rgb(182, 178, 140);
+  background-color: rgb(157, 149, 112);
 }
 
 /* CARRITO */
 .grid_container-carrito {
-  background-color: rgb(182, 178, 140);
+  background-color: rgb(157, 149, 112);
   text-align: center;
   font-family: "Roboto", sans-serif;
 }
 .grid_container-carrito .tit_carrito {
-  text-align: center;
-  padding: 2rem;
+  color: rgb(186, 190, 209);
+  text-shadow: 1px 2px 8px black;
+  font-family: "Patua One", cursive;
+  margin: 2rem;
 }
 .grid_container-carrito .container_carrito {
   display: grid;
@@ -342,7 +455,7 @@ footer .f_copyright {
 }
 .grid_container-carrito .container_carrito .box-carrito .btn_carrito:hover {
   color: white;
-  background-color: rgb(182, 178, 140);
+  background-color: rgb(157, 149, 112);
 }
 
 /* GRID AREAS*/
@@ -362,6 +475,11 @@ footer .f_copyright {
 }
 
 .grid_container-carrito {
+  display: grid;
+  grid-template-areas: "nav" "main" "footer";
+}
+
+.grid_container-accesorios {
   display: grid;
   grid-template-areas: "nav" "main" "footer";
 }
@@ -403,12 +521,24 @@ footer {
   grid-area: carrito;
 }
 
+/* GRID AREA ACCESORIOS */
+.section-accs {
+  grid-area: accesorios;
+}
+
 /* MEDIA QUERY MOBILE */
 @media screen and (max-width: 767px) {
   /* MEDIA QUERY - INDEX  */
   .grid_container-index {
     min-height: 100vh;
     grid-template-areas: "nav" "main" "prod_destacados" "novedades" "footer";
+  }
+  .grid_container-index .banner .img-banner {
+    height: 70vh;
+    width: 100%;
+  }
+  .grid_container-index .banner .tit_bienvenida {
+    font-size: 6vh;
   }
   .grid_container-index .container_prod_destacados {
     grid-template-columns: 1fr;
@@ -473,7 +603,7 @@ footer {
     margin: 1vh 7vh;
   }
   .grid_container-contacto .section_contacto .formulario_contacto .box_form .btn_contacto:hover {
-    background-color: rgb(182, 178, 140);
+    background-color: rgb(157, 149, 112);
   }
   /* MEDIA QUERY CARRITO */
   .grid_container-carrito {
@@ -498,6 +628,39 @@ footer {
     padding: 0.4rem 1rem;
     font-size: 15px;
     margin: auto;
+  }
+  .grid_container-accesorios {
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "nav" "main" "accesorios" "novedades" "footer";
+  }
+  .grid_container-accesorios .section-accs {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2% 0%;
+  }
+  .grid_container-accesorios .section-accs .box-acc {
+    margin: 10%;
+    padding: 5% 1%;
+  }
+  .grid_container-accesorios .section-accs .box-acc .prenda-acc {
+    width: 95%;
+    height: 70%;
+  }
+  .grid_container-accesorios .section-accs .box-acc p {
+    margin: 4%;
+    font-size: 14px;
+  }
+  .grid_container-accesorios .section-accs .box-acc .tit_img-acc {
+    margin: 4%;
+    font-size: 14px;
+  }
+  .grid_container-accesorios .section-accs .box-acc .btn_acc {
+    padding: 5%;
+    font-size: 12px;
+  }
+  .grid_container-accesorios .section-accs .box-acc .btn_acc:hover {
+    background-color: rgb(157, 149, 112);
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -577,7 +740,7 @@ footer {
     margin: 1vh 18vh;
   }
   .grid_container-contacto .section_contacto .formulario_contacto .box_form .btn_contacto:hover {
-    background-color: rgb(182, 178, 140);
+    background-color: rgb(157, 149, 112);
   }
   /*TABLET - CARRITO*/
   .grid_container-carrito {
@@ -597,6 +760,40 @@ footer {
     padding: 0.4rem 1rem;
     font-size: 15px;
     margin: auto;
+  }
+  /* TABLET - ACCESORIOS */
+  .grid_container-accesorios {
+    min-height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-rows: "nav" "main" "accesorios" "novedades" "footer";
+  }
+  .grid_container-accesorios .section-accs {
+    grid-template-columns: repeat(4, 1fr);
+    margin: 1%;
+  }
+  .grid_container-accesorios .section-accs .box-acc {
+    margin: 10%;
+    padding: 10% 1%;
+  }
+  .grid_container-accesorios .section-accs .box-acc .prenda-acc {
+    width: 95%;
+    height: 74%;
+  }
+  .grid_container-accesorios .section-accs .box-acc p {
+    margin: 4%;
+    font-size: 14px;
+  }
+  .grid_container-accesorios .section-accs .box-acc .tit_img-acc {
+    margin: 4%;
+    font-size: 14px;
+  }
+  .grid_container-accesorios .section-accs .box-acc .btn_acc {
+    padding: 3%;
+    font-size: 12px;
+  }
+  .grid_container-accesorios .section-accs .box-acc .btn_acc:hover {
+    background-color: rgb(157, 149, 112);
   }
 }
 

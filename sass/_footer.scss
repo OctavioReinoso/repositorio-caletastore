@@ -1,28 +1,27 @@
 /*FOOTER*/
 
 footer{
-        background-color: black;
+    background-color: black;
     
-        .container_medios_pago{
-            display: flex;
-            color: rgb(255, 255, 255);
-            background-color: black;
-            flex-direction:row;
-            text-align: center;
-            justify-content: space-evenly;
-            padding-top: 20px;
-            padding-bottom: 30px;
-            margin-bottom: 20px
-        }
-
+    .container_medios_pago{
+        display: flex;
+        color: rgb(255, 255, 255);
+        background-color: black;
+        justify-content: space-evenly;
+        padding-top: 20px;
+        margin-bottom: 20px;
+    
         .h3_env{
             padding: 15px;
         }
-
         .foot_p{
             padding:15px 10px;
         }
-
+        
+        .bx{
+            color: rgb(187, 147, 73);
+            font-size: 50px;
+        }
         .h3_mp{
             padding: 15px;
         }
@@ -30,28 +29,32 @@ footer{
         .foot_mp{
             padding: 15px 10px;
         }
+    }
 
-        .container_redes{
-            display: flex;
-            justify-content: center;
-            padding-bottom: 50px;
-        }
-        
-        .logo_r{
-            display: flex;
-            justify-content: center;
-            padding-bottom: 30px;
-        }
+    .logo_r{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
 
         .bx{
             color: rgb(187, 147, 73);
             font-size: 50px;
         }
+    }
 
-        .f_copyright{
-            color: gray;
-            text-align: center;
-            padding-bottom: 30px;
+    .container_redes{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 50px;
+
+        .bx{
+            color: rgb(187, 147, 73);
+            font-size: 50px;
         }
-
+    }
+    .f_copyright{
+        color: rgb(170, 169, 169);
+        text-align: center;
+        padding-bottom: 30px;
+    }
 }
