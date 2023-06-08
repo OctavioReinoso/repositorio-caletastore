@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="../img/faviconn.png" type="image/x-icon">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.7.11/sweetalert2.min.css" integrity="sha512-t00UpSiOSq/o/rWkM0Fv+aD9FjlOzEEc4qLqvGqh0Do1RgvMEKmUYYo5Yb8Te77ux9wkTdoDVD0vwQLJMRLZCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Contacto-CaletaStore</title>
     <meta name="description" content="Dejanos tus datos y nos contactaremos con vos ante cualquier consulta, reclamo, y/o información. Brindamos la mejores atención para nuestros clientes, CaletaStore a su servicio.">
     <meta name="keywords" content="contacto, asistencia, ayuda, email, celular, formulario">
@@ -65,26 +66,26 @@
     <main>
         <h2 class="txt_contacto">Contacto</h2>
         <section class="section_contacto">
-            <form class="formulario_contacto" data-aos="zoom-in">
-                <div class="box_form">
-                    <div class="form_cont">
-                        <input type="text" id="name" placeholder=" " class="form_input">
+            <form id="form-contacto" class="formulario_contacto" data-aos="zoom-in">
+                <div id="box-form" class="box_form">
+                    <div id="box-inputs" class="form_cont">
+                        <input type="text" id="name" placeholder="Juan Ramirez" class="form_input">
                         <label for="name" class="form_label">Nombre y Apellido:</label>
                         <span class="form_line"></span>
                     </div>
 
-                    <div class="form_cont">
-                        <input type="text" id="email" placeholder=" " class="form_input">
+                    <div id="box-inputs" class="form_cont">
+                        <input type="text" id="email" placeholder="juanram_12@gmail.com" class="form_input">
                     <label for="email" class="form_label">Email:</label>
                         <span class="form_line"></span>
                     </div>
 
-                <div class="form_cont">
-                    <input type="text" id="telefono" placeholder=" " class="form_input">
-                    <label for="telefono" class="form_label">Telefono/Celular:</label>
-                    <span class="form_line"></span>
-                </div>
-                    <input type="submit" id="enviar" class="btn_contacto" value="Enviar">
+                    <div id="box-inputs" class="form_cont">
+                        <input type="text" id="telefono" placeholder="+54 2974123465" class="form_input">
+                        <label for="telefono" class="form_label">Telefono/Celular:</label>
+                        <span class="form_line"></span>
+                    </div>
+                    <button type="submit" id="btn-enviar" class="btn_contacto" >Enviar</button>
                 </div>
             </form>
         </section>
@@ -115,6 +116,10 @@
             </div>
             <p class="f_copyright">Copyright © 2023, CaletaStore.Todos los derechos reservados.</p>
     </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.7.11/sweetalert2.min.js" integrity="sha512-N41zI1J3Fe0qxUlhBhZ+dBO2po5k7Vbed92xNADfBeNAqpRsTZiY2+5bBl7u2RLnF6Ngf9xenn9mr53X2uSiPw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="../js/form.js"></script>
     
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

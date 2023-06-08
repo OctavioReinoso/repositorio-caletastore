@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Teko:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
-.botones, .grid_container-carrito .container_carrito .box-carrito .btn_carrito, .grid_container-contacto .section_contacto .formulario_contacto .box_form .btn_contacto, .grid_container-productos .container_productos .box_productos .btn_comprar {
+.botones, .grid_container-contacto .section_contacto .formulario_contacto .box_form .btn_contacto, .grid_container-productos .container_productos .box_productos .btn_comprar {
   background-color: rgb(143, 134, 134);
   font-family: "Oswald", sans-serif;
   font-size: 15px;
@@ -10,7 +10,7 @@
   color: white;
   padding: 2% 4%;
 }
-.botones:hover, .grid_container-carrito .container_carrito .box-carrito .btn_carrito:hover, .grid_container-contacto .section_contacto .formulario_contacto .box_form .btn_contacto:hover, .grid_container-productos .container_productos .box_productos .btn_comprar:hover {
+.botones:hover, .grid_container-contacto .section_contacto .formulario_contacto .box_form .btn_contacto:hover, .grid_container-productos .container_productos .box_productos .btn_comprar:hover {
   background-color: #c09256;
 }
 
@@ -367,32 +367,79 @@ footer .f_copyright {
   font-family: "Roboto", sans-serif;
 }
 .grid_container-carrito .container_carrito {
-  display: grid;
-  justify-content: center;
-  margin-bottom: 3rem;
-}
-.grid_container-carrito .container_carrito .box-carrito {
-  background-color: rgb(137, 140, 150);
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
-  align-items: center;
-  justify-content: center;
-  height: 27rem;
-  width: 40rem;
-  box-shadow: 2px 3px 6px black;
+  gap: 1rem;
+  background-color: #212529;
+  margin: 2rem 6rem;
+  padding: 2rem;
 }
-.grid_container-carrito .container_carrito .box-carrito .txt_carrito {
-  color: black;
+.grid_container-carrito .container_carrito .txt_carrito {
+  margin: 1rem;
+  color: rgb(186, 190, 209);
   font-size: 20px;
 }
-.grid_container-carrito .container_carrito .box-carrito .btn_carrito {
-  border-radius: 0.5rem;
-  padding: 5% 12%;
+.grid_container-carrito .container_carrito .carrito-producto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0rem 4rem;
+  gap: 3rem 5rem;
+  border-radius: 1rem;
+  background-color: rgb(157, 149, 112);
+  align-items: center;
 }
-.grid_container-carrito .container_carrito .box-carrito .btn_carrito:hover {
-  color: white;
-  background-color: #c09256;
+.grid_container-carrito .container_carrito .carrito-producto .img-carrito {
+  width: 4rem;
+  border-radius: 0.5rem;
+  padding: 3px;
+}
+.grid_container-carrito .container_carrito .carrito-producto .tit-prod-carrito {
+  font-size: 18px;
+  color: whitesmoke;
+}
+.grid_container-carrito .container_carrito .carrito-producto .subt-prod-carrito {
+  font-size: 16px;
+  color: whitesmoke;
+  padding: 5px;
+}
+.grid_container-carrito .container_carrito .carrito-producto .carrito-producto-eliminar {
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+  background-color: transparent;
+}
+.grid_container-carrito .container_carrito .carrito-acciones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 5rem;
+}
+.grid_container-carrito .container_carrito .carrito-acciones .carrito-comprar {
+  border: 0;
+  background-color: rgb(143, 134, 134);
+  padding: 0.2rem;
+}
+.grid_container-carrito .container_carrito .carrito-acciones .box-carrito-vaciar .carrito-vaciar {
+  border: 0;
+  background-color: rgb(143, 134, 134);
+  padding: 0.2rem;
+}
+.grid_container-carrito .container_carrito .carrito-acciones .box-carrito-total {
+  display: flex;
+  align-items: center;
+}
+.grid_container-carrito .container_carrito .carrito-acciones .box-carrito-total .precio-total {
+  color: whitesmoke;
+  margin: 0rem 1.5rem;
+}
+.grid_container-carrito .container_carrito .disabled {
+  display: none;
+}
+.grid_container-carrito .container_carrito .carrito-txt-compra {
+  color: rgb(186, 190, 209);
+  font-size: 20px;
 }
 
 /* GRID AREAS*/
