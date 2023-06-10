@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.7.11/sweetalert2.min.css" integrity="sha512-t00UpSiOSq/o/rWkM0Fv+aD9FjlOzEEc4qLqvGqh0Do1RgvMEKmUYYo5Yb8Te77ux9wkTdoDVD0vwQLJMRLZCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="shortcut icon" href="../img/faviconn.png" type="image/x-icon">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <title>Carrito-CaletaStore</title>
     <meta name="description" content="Agrega todas las prendas que te gusten al carrito, selecciona la cantidad de unidades que deseen comprar y dale al boton de comprar. Si desea volver al menu principal pulse el boton para volver al inicio">
     <meta name="keywords" content="carrito, compra, productos, accesorios, venta, unidades, inicio">
@@ -36,21 +38,18 @@
                                     <a class="dropdown-item" href="./productos.html">Remeras</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="./sections/productos.html">Pantalones</a>
+                                    <a class="dropdown-item" href="./productos.html">Pantalones</a>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item" href="./sections/productos.html">Zapatillas</a>
+                                    <a class="dropdown-item" href="./productos.html">Zapatillas</a>
                                 </li>
                             </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./accesorios.html">Accesorios</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../sections/contacto.html">Contacto</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../sections/carrito.html">Carrito</a>
+                            <a class="nav-link" id="btn-carrito" href="./carrito.html"> <i class='bx bx-cart'></i> </a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -64,12 +63,30 @@
 
     <main>
         <h1 class="tit_carrito">Carrito</h1>
-        <section class="container_carrito">
-            <div class="box-carrito" data-aos="zoom-in">
-                <p class="txt_carrito">No hay productos agregados al carrito</p>
-                <a href="../index.html"><input type="button" value="Volver al inicio" class="btn_carrito"></a>
+        <div class="container_carrito" id="containerCarrito">
+            <p id="txt-carrito-vacio" class="txt_carrito ">No hay productos agregados al carrito</p>
+            
+            <div id="carrito-prod" class="carrito-producto disabled">
+                
             </div>
-        </section>
+            
+            <div id="carrito-acciones" class="carrito-acciones disabled">
+                <div class="box-carrito-vaciar">
+                    <button id="btn-vaciar" class="carrito-vaciar">Vaciar carrito</button>
+                </div>
+                <div class="box-carrito-total">
+                    <div class="carrito-total">
+                        <p class="precio-total" id="total">TOTAL: $3000</p>
+                    </div>
+                    <button id="btn-comprar" class="carrito-comprar">Comprar</button>
+                </div>
+            </div>
+            <p id="txt-compra" class="carrito-txt-compra disabled">Gracias por su compra!</p>
+            <a href="../index.html"><input type="button" value="Volver al inicio" class="btn-inicio"></a>
+        </div>
+        
+
+
     </main>
 
     <footer>
@@ -99,11 +116,17 @@
         <p class="f_copyright">Copyright © 2023, CaletaStore.Todos los derechos reservados.</p>
     </footer>
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.7.11/sweetalert2.min.js" integrity="sha512-N41zI1J3Fe0qxUlhBhZ+dBO2po5k7Vbed92xNADfBeNAqpRsTZiY2+5bBl7u2RLnF6Ngf9xenn9mr53X2uSiPw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="../model/Producto.js"></script> -->
+    <!-- <script src="../js/productos.js"></script> -->
+    <script src="../js/carrito.js"></script>
+    
+    
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

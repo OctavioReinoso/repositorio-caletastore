@@ -1,8 +1,9 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Teko:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
-.botones, .grid_container-carrito .container_carrito .box-carrito .btn_carrito, .grid_container-contacto .section_contacto .formulario_contacto .box_form .btn_contacto, .grid_container-productos .container_productos .box_productos .btn_comprar {
+.botones, .grid_container-contacto .section_contacto .formulario_contacto .box_form .btn_contacto, .grid_container-productos .container_productos .box_productos .btn_comprar {
   background-color: rgb(143, 134, 134);
   font-family: "Oswald", sans-serif;
   font-size: 15px;
@@ -10,11 +11,11 @@
   color: white;
   padding: 2% 4%;
 }
-.botones:hover, .grid_container-carrito .container_carrito .box-carrito .btn_carrito:hover, .grid_container-contacto .section_contacto .formulario_contacto .box_form .btn_contacto:hover, .grid_container-productos .container_productos .box_productos .btn_comprar:hover {
+.botones:hover, .grid_container-contacto .section_contacto .formulario_contacto .box_form .btn_contacto:hover, .grid_container-productos .container_productos .box_productos .btn_comprar:hover {
   background-color: #c09256;
 }
 
-.h1s, .grid_container-carrito .tit_carrito, .grid_container-contacto .txt_contacto, .grid_container-accesorios .tit-acc, .grid_container-productos .tit_prod, .grid_container-index .banner .h3_prod_destacados {
+.h1s, .grid_container-carrito .tit_carrito, .grid_container-contacto .txt_contacto, .grid_container-accesorios .tit-acc, .grid_container-productos .tit_prod, .grid_container-index .banner .h3_prod_destacados, .container-reseñas .tit-reseña {
   color: rgb(186, 190, 209);
   text-shadow: 1px 2px 8px black;
   font-family: "Patua One", cursive;
@@ -54,33 +55,26 @@ nav .btn:hover {
   border-color: white;
 }
 
-/* CONTAINER NOVEDADES CSS */
-.container_novedades {
+/* CONTAINER RESEÑA CSS */
+.container-reseñas {
   display: flex;
   text-align: center;
   font-size: 18px;
   flex-direction: column;
-  margin: 4rem 1rem;
 }
-.container_novedades .bot_nov {
-  width: 15rem;
-  padding: 7px 6px;
-  margin: 1rem;
-  font-size: 14px;
+.container-reseñas .box-reseña {
+  margin: 2rem 6rem;
+  background-color: #212529;
 }
-.container_novedades .div_buscar {
-  margin: 1.3rem 0rem;
+.container-reseñas .box-reseña .comentario-box {
+  background-color: #212529;
+  border: solid 1px grey;
+  color: grey;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin: 2rem 5rem;
 }
-.container_novedades .div_buscar .bot_nov_buscar {
-  background-color: rgb(143, 134, 134);
-  font-family: "Oswald", sans-serif;
-  font-size: 15px;
-  text-decoration: none;
+.container-reseñas .box-reseña .correo-usuario {
   color: white;
-  padding: 0.7rem 1.4rem;
-}
-.container_novedades .div_buscar .bot_nov_buscar:hover {
-  background-color: #c09256;
 }
 
 /*FOOTER*/
@@ -367,32 +361,94 @@ footer .f_copyright {
   font-family: "Roboto", sans-serif;
 }
 .grid_container-carrito .container_carrito {
-  display: grid;
-  justify-content: center;
-  margin-bottom: 3rem;
-}
-.grid_container-carrito .container_carrito .box-carrito {
-  background-color: rgb(137, 140, 150);
   display: flex;
   flex-direction: column;
-  border: 1px solid black;
-  align-items: center;
-  justify-content: center;
-  height: 27rem;
-  width: 40rem;
-  box-shadow: 2px 3px 6px black;
+  gap: 1rem;
+  background-color: #212529;
+  margin: 2rem 6rem;
+  padding: 2rem;
 }
-.grid_container-carrito .container_carrito .box-carrito .txt_carrito {
-  color: black;
+.grid_container-carrito .container_carrito .txt_carrito {
+  margin: 1rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgb(186, 190, 209);
   font-size: 20px;
 }
-.grid_container-carrito .container_carrito .box-carrito .btn_carrito {
-  border-radius: 0.5rem;
-  padding: 5% 12%;
+.grid_container-carrito .container_carrito .carrito-producto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0rem 3rem;
+  gap: 2rem 6rem;
+  border-radius: 1rem;
+  border: solid 2px grey;
+  background-color: rgb(157, 149, 112);
+  align-items: center;
 }
-.grid_container-carrito .container_carrito .box-carrito .btn_carrito:hover {
+.grid_container-carrito .container_carrito .carrito-producto .img-carrito {
+  width: 4rem;
+  border-radius: 0.5rem;
+  padding: 2px;
+}
+.grid_container-carrito .container_carrito .carrito-producto .tit-prod-carrito {
+  font-size: 18px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: rgba(0, 0, 0, 0.548);
+}
+.grid_container-carrito .container_carrito .carrito-producto .subt-prod-carrito {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.548);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  padding: 5px;
+}
+.grid_container-carrito .container_carrito .carrito-producto .carrito-producto-eliminar {
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+  background-color: transparent;
+}
+.grid_container-carrito .container_carrito .carrito-acciones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 5rem;
+}
+.grid_container-carrito .container_carrito .carrito-acciones .carrito-comprar {
+  background-color: rgb(143, 134, 134);
+  font-family: "Oswald", sans-serif;
+  font-size: 15px;
+  text-decoration: none;
   color: white;
-  background-color: #c09256;
+  padding: 2% 4%;
+}
+.grid_container-carrito .container_carrito .carrito-acciones .box-carrito-vaciar .carrito-vaciar {
+  background-color: rgb(143, 134, 134);
+  font-family: "Oswald", sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  padding: 3% 4%;
+}
+.grid_container-carrito .container_carrito .carrito-acciones .box-carrito-total {
+  display: flex;
+  align-items: center;
+}
+.grid_container-carrito .container_carrito .carrito-acciones .box-carrito-total .precio-total {
+  color: whitesmoke;
+  margin: 0rem 1rem;
+}
+.grid_container-carrito .container_carrito .disabled {
+  display: none;
+}
+.grid_container-carrito .container_carrito .btn-inicio {
+  background-color: rgb(143, 134, 134);
+  font-family: "Oswald", sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  padding: 1% 4%;
 }
 
 /* GRID AREAS*/

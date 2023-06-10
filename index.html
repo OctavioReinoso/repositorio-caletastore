@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="./img/faviconn.png" type="image/x-icon">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.7.11/sweetalert2.min.css" integrity="sha512-t00UpSiOSq/o/rWkM0Fv+aD9FjlOzEEc4qLqvGqh0Do1RgvMEKmUYYo5Yb8Te77ux9wkTdoDVD0vwQLJMRLZCQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Inicio-CaletaStore</title>
     <meta name="description" content="Jordan, remeras oversize, cargos, aceptamos tarjetas de débito y crédito, promos 2x1 y envios a todos el país. Todo en CaletaStore.">
     <meta name="keywords" content="indumentaria, calzado, destacado, nike, jordan, moda, envios, gratis">
@@ -17,50 +18,47 @@
   <body class="grid_container-index">
     <header>
       <nav class="navbar navbar-expand-lg bg-dark">
-          <div class="container-fluid">
-              <a class="navbar-brand" href="./index.html">
-              <img src="./img/faviconn.png" alt="IconoCaletaStore" width="26" height="25" class="d-inline-block align-text-top"/>CaletaStore
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
-                      <li class="nav-item">
-                      <a class="nav-link" href="./index.html">Inicio</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Productos
-                          </a>
-                          <ul class="dropdown-menu">
-                              <li>
-                                  <a class="dropdown-item" href="./sections/productos.html">Remeras</a>
-                              </li>
-                              <li>
-                                  <a class="dropdown-item" href="./sections/productos.html">Pantalones</a>
-                              </li>
-                              <li>
-                                  <a class="dropdown-item" href="./sections/productos.html">Zapatillas</a>
-                              </li>
-                          </ul> 
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="./sections/accesorios.html">Accesorios</a>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">
+            <img src="../img/faviconn.png" alt="IconoCaletaStore" width="26" height="25" class="d-inline-block align-text-top"/>CaletaStore
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"    aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link" href="/index.html">Inicio</a>
                     </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="./sections/contacto.html">Contacto</a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="./sections/carrito.html">Carrito</a>
-                      </li>
-                  </ul>
-                  <form class="d-flex" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"/>
-                      <button class="btn btn-outline-success" type="submit">Buscar</button>
-                  </form>
-              </div>
-          </div>
-      </nav>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Productos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="/sections/productos.html">Remeras</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/sections/productos.html">Pantalones</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="/sections/productos.html">Zapatillas</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/sections/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="btn-carrito" href="/sections/carrito.html"> <i class='bx bx-cart'></i> <span class="numCarrito">0</span> </a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"/>
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
   </header>
 
     <main>
@@ -90,20 +88,17 @@
         </div>
       </section>
 
-      <div class="container_novedades">
-        <p class="p_novedades">Dejanos tu e-mail para estar al tanto de todas las novedades de CaletaStore</p>
-        <form>
-          <input type="email" name="email" id="email" class="bot_nov" placeholder="E-mail"/>
-        </form>
-
-        <div class="div_buscar">
-          <a href="#" class="bot_nov_buscar">Enviar</a>
+      <div class="container-reseñas">
+        <h3 class="tit-reseña">Algunas opiniones de nuestros usuarios</h3>
+        <div id="box-reseña" class="box-reseña">
+          
         </div>
-      </div>
+      </div> 
     </main>
+    
     <footer>
       <section class="container_medios_pago">
-        <div>
+        <div> 
           <i class="bx bxs-truck"></i>
           <h3 class="h3_env">ENVIOS A TODO EL PAÍS</h3>
           <hr />
@@ -129,6 +124,13 @@
         Copyright © 2023, CaletaStore.Todos los derechos reservados.
       </p>
     </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.7.11/sweetalert2.min.js" integrity="sha512-N41zI1J3Fe0qxUlhBhZ+dBO2po5k7Vbed92xNADfBeNAqpRsTZiY2+5bBl7u2RLnF6Ngf9xenn9mr53X2uSiPw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="/model/Producto.js"></script>
+    <script src="./js/productos.js"></script>
+    <script src="/js/carrito.js"></script> -->
+    <script src="/js/reseñas.js"></script>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

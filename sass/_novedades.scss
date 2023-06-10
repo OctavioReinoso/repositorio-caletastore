@@ -1,32 +1,29 @@
-/* CONTAINER NOVEDADES CSS */
+/* CONTAINER RESEÑA CSS */
 
-.container_novedades{
+.container-reseñas{
     display: flex;
     text-align: center;
     font-size: 18px;
     flex-direction: column;
-    margin: 4rem 1rem;
 
-    .bot_nov{
-        width: 15rem;
-        padding: 7px 6px;
-        margin: 1rem;
-        font-size: 14px;
+    .tit-reseña{
+        @extend .h1s;
     }
-
-    .div_buscar{
-        margin: 1.3rem 0rem;
-        .bot_nov_buscar{
-            background-color: $btnColor;
-            font-family: 'Oswald', sans-serif;
-            font-size: 15px;
-            text-decoration: none;
-            color: white;
-            padding: 0.7rem 1.4rem; 
-
-            &:hover{
-                background-color: $btnHover;
-            }
+    
+    .box-reseña{ 
+        margin: 2rem 6rem;
+        background-color: $boxProd;
+    
+        .comentario-box{
+            background-color: $boxProd;
+            border: solid 1px grey;
+            color: grey;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;   
+            margin: 2rem 5rem;
         }
-    }    
+        .correo-usuario{
+            color: white;
+        }
+        
+    }
 }
