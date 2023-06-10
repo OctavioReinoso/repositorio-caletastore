@@ -370,7 +370,10 @@ footer .f_copyright {
 }
 .grid_container-carrito .container_carrito .txt_carrito {
   margin: 1rem;
+<<<<<<< HEAD
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+=======
+>>>>>>> b59518beb2c74140bd1d3bc30b1ca235541bc515
   color: rgb(186, 190, 209);
   font-size: 20px;
 }
@@ -378,16 +381,23 @@ footer .f_copyright {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+<<<<<<< HEAD
   margin: 0rem 3rem;
   gap: 2rem 6rem;
   border-radius: 1rem;
   border: solid 2px grey;
+=======
+  margin: 0rem 4rem;
+  gap: 3rem 5rem;
+  border-radius: 1rem;
+>>>>>>> b59518beb2c74140bd1d3bc30b1ca235541bc515
   background-color: rgb(157, 149, 112);
   align-items: center;
 }
 .grid_container-carrito .container_carrito .carrito-producto .img-carrito {
   width: 4rem;
   border-radius: 0.5rem;
+<<<<<<< HEAD
   padding: 2px;
 }
 .grid_container-carrito .container_carrito .carrito-producto .tit-prod-carrito {
@@ -399,6 +409,17 @@ footer .f_copyright {
   font-size: 16px;
   color: rgba(0, 0, 0, 0.548);
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+=======
+  padding: 3px;
+}
+.grid_container-carrito .container_carrito .carrito-producto .tit-prod-carrito {
+  font-size: 18px;
+  color: whitesmoke;
+}
+.grid_container-carrito .container_carrito .carrito-producto .subt-prod-carrito {
+  font-size: 16px;
+  color: whitesmoke;
+>>>>>>> b59518beb2c74140bd1d3bc30b1ca235541bc515
   padding: 5px;
 }
 .grid_container-carrito .container_carrito .carrito-producto .carrito-producto-eliminar {
@@ -415,6 +436,7 @@ footer .f_copyright {
   padding: 1rem 5rem;
 }
 .grid_container-carrito .container_carrito .carrito-acciones .carrito-comprar {
+<<<<<<< HEAD
   background-color: rgb(143, 134, 134);
   font-family: "Oswald", sans-serif;
   font-size: 15px;
@@ -429,6 +451,16 @@ footer .f_copyright {
   text-decoration: none;
   color: white;
   padding: 3% 4%;
+=======
+  border: 0;
+  background-color: rgb(143, 134, 134);
+  padding: 0.2rem;
+}
+.grid_container-carrito .container_carrito .carrito-acciones .box-carrito-vaciar .carrito-vaciar {
+  border: 0;
+  background-color: rgb(143, 134, 134);
+  padding: 0.2rem;
+>>>>>>> b59518beb2c74140bd1d3bc30b1ca235541bc515
 }
 .grid_container-carrito .container_carrito .carrito-acciones .box-carrito-total {
   display: flex;
@@ -436,11 +468,16 @@ footer .f_copyright {
 }
 .grid_container-carrito .container_carrito .carrito-acciones .box-carrito-total .precio-total {
   color: whitesmoke;
+<<<<<<< HEAD
   margin: 0rem 1rem;
+=======
+  margin: 0rem 1.5rem;
+>>>>>>> b59518beb2c74140bd1d3bc30b1ca235541bc515
 }
 .grid_container-carrito .container_carrito .disabled {
   display: none;
 }
+<<<<<<< HEAD
 .grid_container-carrito .container_carrito .btn-inicio {
   background-color: rgb(143, 134, 134);
   font-family: "Oswald", sans-serif;
@@ -449,6 +486,11 @@ footer .f_copyright {
   color: white;
   border-radius: 5px;
   padding: 1% 4%;
+=======
+.grid_container-carrito .container_carrito .carrito-txt-compra {
+  color: rgb(186, 190, 209);
+  font-size: 20px;
+>>>>>>> b59518beb2c74140bd1d3bc30b1ca235541bc515
 }
 
 /* GRID AREAS*/

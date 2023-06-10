@@ -16,7 +16,10 @@
         padding: 2rem;
         .txt_carrito{
             margin: 1rem;
+<<<<<<< HEAD
             font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+=======
+>>>>>>> b59518beb2c74140bd1d3bc30b1ca235541bc515
             color: $titColor;
             font-size: 20px;
             // display: none;
@@ -26,15 +29,22 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
+<<<<<<< HEAD
             margin: 0rem 3rem;
             gap: 2rem 6rem;
             border-radius: 1rem;
             border: solid 2px grey;
+=======
+            margin: 0rem 4rem;
+            gap: 3rem 5rem;
+            border-radius: 1rem;
+>>>>>>> b59518beb2c74140bd1d3bc30b1ca235541bc515
             background-color: $fondoBeige;
             align-items: center;
             .img-carrito{
                 width: 4rem;
                 border-radius: 0.5rem;
+<<<<<<< HEAD
                 padding: 2px;
             }
             .tit-prod-carrito{
@@ -46,6 +56,17 @@
                 font-size: 16px;
                 color: rgba(0, 0, 0, 0.548);
                 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+=======
+                padding: 3px;
+            }
+            .tit-prod-carrito{
+                font-size: 18px;
+                color: whitesmoke;
+            }
+            .subt-prod-carrito{
+                font-size: 16px;
+                color: whitesmoke;
+>>>>>>> b59518beb2c74140bd1d3bc30b1ca235541bc515
                 padding: 5px;
             }
             .carrito-producto-eliminar{
@@ -64,22 +85,34 @@
             gap: 1rem;
             padding: 1rem 5rem;
             .carrito-comprar{
+<<<<<<< HEAD
                 background-color: rgb(143, 134, 134);
                 font-family: 'Oswald', sans-serif;
                 font-size: 15px;
                 text-decoration: none;
                 color: white;
                 padding: 2% 4%; 
+=======
+                border: 0;
+                background-color: $btnColor;
+                padding: 0.2rem;
+>>>>>>> b59518beb2c74140bd1d3bc30b1ca235541bc515
             }
             
             .box-carrito-vaciar{
                 .carrito-vaciar{
+<<<<<<< HEAD
                     background-color: rgb(143, 134, 134);
                     font-family: 'Oswald', sans-serif;
                     font-size: 15px;
                     text-decoration: none;
                     color: white;
                     padding: 3% 4%; 
+=======
+                    border: 0;
+                    background-color: $btnColor;
+                    padding: 0.2rem;
+>>>>>>> b59518beb2c74140bd1d3bc30b1ca235541bc515
                 }
             }
             .box-carrito-total{
@@ -87,13 +120,18 @@
                 align-items: center;
                 .precio-total{
                     color: whitesmoke;
+<<<<<<< HEAD
                     margin: 0rem 1rem;
+=======
+                    margin: 0rem 1.5rem;
+>>>>>>> b59518beb2c74140bd1d3bc30b1ca235541bc515
                 }
             }
         }
     .disabled{
         display: none;
     }
+<<<<<<< HEAD
     .btn-inicio{
         background-color: rgb(143, 134, 134);
         font-family: 'Oswald', sans-serif;
@@ -102,6 +140,11 @@
         color: white;
         border-radius: 5px;
         padding: 1% 4%; 
+=======
+    .carrito-txt-compra{
+        color: $titColor;
+        font-size: 20px;
+>>>>>>> b59518beb2c74140bd1d3bc30b1ca235541bc515
     }
     }
 
