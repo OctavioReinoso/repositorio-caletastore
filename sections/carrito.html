@@ -63,12 +63,30 @@
 
     <main>
         <h1 class="tit_carrito">Carrito</h1>
-        <section class="container_carrito">
-            <div class="box-carrito" data-aos="zoom-in">
-                <p class="txt_carrito">No hay productos agregados al carrito</p>
-                <a href="../index.html"><input type="button" value="Volver al inicio" class="btn_carrito"></a>
+        <div class="container_carrito" id="containerCarrito">
+            <p id="txt-carrito-vacio" class="txt_carrito disabled">No hay productos agregados al carrito</p>
+            
+            <div id="carrito-prod" class="carrito-producto disabled">
+                
             </div>
-        </section>
+            
+            <div id="carrito-acciones" class="carrito-acciones disabled">
+                <div class="box-carrito-vaciar">
+                    <button id="btn-vaciar" class="carrito-vaciar">Vaciar carrito</button>
+                </div>
+                <div class="box-carrito-total">
+                    <div class="carrito-total">
+                        <p class="precio-total" id="total">TOTAL: $3000</p>
+                    </div>
+                    <button id="btn-comprar" class="carrito-comprar">Comprar</button>
+                </div>
+            </div>
+            <p id="txt-compra" class="carrito-txt-compra disabled">Gracias por su compra!</p>
+            <a href="../index.html"><input type="button" value="Volver al inicio" class="btn-inicio"></a>
+        </div>
+        
+
+
     </main>
 
     <footer>
