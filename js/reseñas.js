@@ -1,4 +1,5 @@
-const reseñasApi = 'https://jsonplaceholder.typicode.com/comments?postId=1';
+const reseñasApi = 'https://jsonplaceholder.typicode.com/posts/1/comments';
+// https://jsonplaceholder.typicode.com/comments?postId=1
 const containerReseñas = document.querySelector('#container-reseñas')
 const divReseña = document.querySelector('#box-reseña');
 
